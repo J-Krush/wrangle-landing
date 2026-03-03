@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-page: #0F0F12;
+  --color-card: #18181B;
+  --color-terminal-bar: #1F1F23;
+  --color-primary: #E5E5E5;
+  --color-secondary: #A3A3A3;
+  --color-tertiary: #737373;
+  --color-dark: #0C0C0C;
+  --color-teal: #3DB8A8;
+  --color-teal-dark: #2D9B8C;
+  --color-border: #27272A;
+  --color-border-subtle: #1F1F1F;
+  --color-dot-red: #EF4444;
+  --color-dot-yellow: #EAB308;
+  --color-dot-green: #2D9B8C;
+  --font-mono: "JetBrains Mono", monospace;
+}
