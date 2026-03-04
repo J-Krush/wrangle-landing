@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+---
+
+<Layout title="refund policy — wrangle">
+  <header class="flex items-center justify-between px-5 lg:px-[200px] py-4">
+    <a href="/" class="flex items-center gap-2.5">
+      <img
+        src="/images/wrangle-logo-13.png"
+        alt="wrangle logo"
+        class="w-8 h-8 rounded"
+      />
+      <span class="text-base font-bold">wrangle</span>
+    </a>
+  </header>
+
+  <main class="px-5 lg:px-[200px] py-16 lg:py-[100px] max-w-[900px] mx-auto">
+    <h1 class="text-2xl font-bold mb-8">// refund policy</h1>
+    <p class="text-tertiary text-sm mb-10">effective date: march 4, 2026</p>
+
+    <div class="flex flex-col gap-8 text-secondary text-base leading-relaxed">
+      <section>
+        <h2 class="text-primary font-semibold mb-2">30-day money-back guarantee</h2>
+        <p>
+          if you're not satisfied with wrangle for any reason, you can request a
+          full refund within 30 days of your purchase. no questions asked.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-primary font-semibold mb-2">how to request a refund</h2>
+        <p>
+          send an email to
+          <a href="mailto:support@wrangeapp.dev" class="text-teal-dark hover:underline">support@wrangeapp.dev</a>
+          with your purchase email and order number. we'll process your refund
+          within a few business days.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-primary font-semibold mb-2">after 30 days</h2>
+        <p>
+          refund requests made after the 30-day window will be considered on a
+          case-by-case basis. reach out and we'll do our best to help.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="flex items-center justify-between px-5 lg:px-[200px] py-5 border-t border-border-subtle">
+    <span class="text-tertiary text-xs">© 2026 wrangle</span>
+    <div class="flex gap-3 text-tertiary text-xs">
+      <a href="mailto:support@wrangeapp.dev" class="hover:text-secondary transition-colors">support</a>
+      <span>·</span>
+      <a href="https://github.com/J-Krush/wrangle-feedback" class="hover:text-secondary transition-colors">github</a>
+    </div>
+  </footer>
+</Layout>
