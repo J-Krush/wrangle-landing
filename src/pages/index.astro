@@ -15,7 +15,7 @@ import "../styles/global.css";
       <span class="text-base font-bold">wrangle</span>
     </div>
     <a
-      href="#download"
+      href="https://dl.wrangeapp.dev/Wrangle-1.0.6.dmg"
       class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-6 py-2.5 text-sm font-medium text-dark hover:brightness-110 transition-all"
     >
       download
@@ -28,43 +28,32 @@ import "../styles/global.css";
       the md editor built for AI-native development.
     </h1>
     <p class="text-secondary text-base lg:text-lg text-center leading-relaxed max-w-[800px]">
-      a native macOS workspace for developers who live in multi-agent workflows. edit your CLAUDE.md files, run agent sessions with embedded terminals, and never lose context switching between projects.
+      a native macOS workspace for developers who live in multi-agent workflows. edit your CLAUDE.md files, run agent sessions with embedded terminals, and get notified the moment an agent needs input or finishes — so you're never guessing which tab to check.
     </p>
-    <a
-      href="#download"
-      class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-8 py-4 text-base font-semibold text-dark hover:brightness-110 transition-all"
-    >
-      download — $9.99
-    </a>
-    <div class="w-full max-w-[1040px] h-[300px] lg:h-[585px] rounded bg-card border border-border flex items-center justify-center">
-      <span class="text-tertiary text-sm">product screenshot</span>
+    <div class="flex flex-col items-center gap-3">
+      <a
+        href="/buy"
+        class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-8 py-4 text-base font-semibold text-dark hover:brightness-110 transition-all"
+      >
+        buy — $9.99
+      </a>
+      <a
+        href="https://dl.wrangeapp.dev/Wrangle-1.0.6.dmg"
+        class="text-secondary text-sm hover:text-primary transition-colors"
+      >
+        download
+      </a>
     </div>
-  </section>
-
-  <!-- Problem (Terminal) -->
-  <section class="flex flex-col items-center px-5 lg:px-[200px] py-12 lg:py-[80px]">
-    <div class="w-full max-w-[1040px] rounded bg-card border border-border overflow-hidden">
-      <div class="flex items-center gap-2 px-4 py-3 bg-terminal-bar">
-        <span class="w-3 h-3 rounded-full bg-dot-red"></span>
-        <span class="w-3 h-3 rounded-full bg-dot-yellow"></span>
-        <span class="w-3 h-3 rounded-full bg-dot-green"></span>
-        <span class="text-tertiary text-xs ml-2">terminal</span>
-      </div>
-      <div class="p-6 overflow-x-auto">
-        <pre class="text-sm leading-[1.8] min-w-[600px]"><span class="text-tertiary">// the problem with your current setup</span>
-
-<span class="text-tertiary">$ code system-prompt.md     // xml highlighting breaks</span>
-<span class="text-tertiary">$ terminal-1: claude        // where was that session again?</span>
-<span class="text-tertiary">$ terminal-2: gemini        // no context, no notifications</span>
-<span class="text-tertiary">$ alt-tab alt-tab alt-tab   // death by window switching</span>
-
-<span class="text-teal-dark">$ wrangle .                 // ✓ everything in one place</span></pre>
-      </div>
-    </div>
+    <img
+      src="/images/product-images/shot-1.png"
+      alt="Wrangle markdown editor showing a rendered CLAUDE.md file"
+      class="w-full max-w-[1040px] h-auto rounded shadow-2xl shadow-black/50"
+      loading="lazy"
+    />
   </section>
 
   <!-- Features -->
-  <section class="flex flex-col items-center px-5 lg:px-[200px] py-12 lg:py-[80px] gap-8">
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
     <div class="w-full max-w-[1040px] flex flex-col gap-6">
       <h2 class="text-2xl font-bold">// what you get</h2>
       <div class="h-2"></div>
@@ -107,33 +96,33 @@ import "../styles/global.css";
     </div>
   </section>
 
+  <!-- Editor Preview -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// the editor</h2>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        a markdown editor that understands AI prompts. xml blocks get proper syntax highlighting, collapsible sections, and distinct treatment for CLAUDE.md, SKILL.md, and AGENTS.md files.
+      </p>
+    </div>
+    <img
+      src="/images/product-images/shot-5.png"
+      alt="Wrangle markdown editor showing a rendered CLAUDE.md file"
+      class="w-full max-w-[1040px] h-auto rounded shadow-2xl shadow-black/50"
+      loading="lazy"
+    />
+  </section>
+
   <!-- Terminals & Sessions -->
-  <section class="flex flex-col items-center px-5 lg:px-[200px] py-12 lg:py-[80px]">
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px]">
     <div class="w-full max-w-[1040px] flex flex-col lg:flex-row gap-8 lg:gap-12">
-      <!-- Left column: Terminal mockup -->
-      <div class="w-full lg:w-[55%] rounded bg-card border border-border overflow-hidden flex flex-col">
-        <!-- Title bar -->
-        <div class="flex items-center gap-2 px-4 py-3 bg-terminal-bar">
-          <span class="w-3 h-3 rounded-full bg-dot-red"></span>
-          <span class="w-3 h-3 rounded-full bg-dot-yellow"></span>
-          <span class="w-3 h-3 rounded-full bg-dot-green"></span>
-          <span class="text-tertiary text-xs ml-2">claude — project-api</span>
-          <span class="ml-auto flex items-center gap-1.5 text-xs text-teal-dark">● needs input</span>
-        </div>
-        <!-- Terminal body -->
-        <div class="p-6 flex-1">
-          <pre class="text-sm leading-[1.8]"><span class="text-tertiary">$</span> <span class="text-secondary">claude</span>
-<span class="text-secondary">&gt; analyzing src/api/routes.ts...</span>
-<span class="text-secondary">&gt; found 3 issues in error handling</span>
-<span class="text-teal-dark">&gt; ready for review. apply changes? (y/n)</span></pre>
-        </div>
-        <!-- Context bar -->
-        <div class="flex items-center gap-3 px-4 py-3 border-t border-border">
-          <span class="text-xs text-secondary bg-terminal-bar px-2 py-1 rounded">CLAUDE.md</span>
-          <span class="text-xs text-secondary bg-terminal-bar px-2 py-1 rounded">2 skills</span>
-          <span class="text-xs text-secondary bg-terminal-bar px-2 py-1 rounded">3 MCP servers</span>
-        </div>
-      </div>
+      <!-- Left column: Terminal screenshot -->
+      
+      <img
+        src="/images/product-images/shot-4.png"
+        alt="Wrangle terminal with notification toast showing agent ready for input"
+        class="w-full lg:w-[55%] h-auto rounded shadow-2xl shadow-black/50"
+        loading="lazy"
+      />
 
       <!-- Right column: Feature descriptions -->
       <div class="w-full lg:w-[45%] flex flex-col gap-6 justify-center">
@@ -161,7 +150,7 @@ import "../styles/global.css";
   </section>
 
   <!-- Anti-Pitch -->
-  <section class="flex items-center justify-center px-5 lg:px-[200px] py-12 lg:py-[80px]">
+  <section class="flex items-center justify-center px-5 lg:px-[200px] py-16 lg:py-[100px]">
     <p class="text-secondary text-base lg:text-lg text-center leading-[1.7] max-w-[700px]">
       if you're not running AI agents from your editor yet, you will be soon.
       wrangle was built by a developer who manages multiple claude and gemini
@@ -171,22 +160,31 @@ import "../styles/global.css";
   </section>
 
   <!-- Final CTA -->
-  <section id="download" class="flex flex-col items-center justify-center px-5 lg:px-[200px] py-12 lg:py-[80px] gap-6">
+  <section id="download" class="flex flex-col items-center justify-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-6">
+    <img src="/images/wrangle-logo-transparent.png" alt="Wrangle logo" class="w-14 h-14 drop-shadow-[0_0_12px_rgba(45,212,191,0.3)]" />
     <h2 class="text-[32px] lg:text-[40px] font-bold">wrangle</h2>
-    <a
-      href="#download"
-      class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-8 py-4 text-base font-semibold text-dark hover:brightness-110 transition-all"
-    >
-      download — $9.99
-    </a>
-    <span class="text-tertiary text-[13px]">macOS 15+ · apple silicon · direct download</span>
+    <div class="flex flex-col items-center gap-3">
+      <a
+        href="/buy"
+        class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-8 py-4 text-base font-semibold text-dark hover:brightness-110 transition-all"
+      >
+        buy — $9.99
+      </a>
+      <a
+        href="https://dl.wrangeapp.dev/Wrangle-1.0.6.dmg"
+        class="text-secondary text-sm hover:text-primary transition-colors"
+      >
+        download
+      </a>
+    </div>
+    <span class="text-tertiary text-[13px]">macOS 15+ · apple silicon · one-time purchase</span>
   </section>
 
   <!-- Footer -->
   <footer class="flex items-center justify-between px-5 lg:px-[200px] py-5 border-t border-border-subtle">
     <span class="text-tertiary text-xs">© 2026 wrangle</span>
     <div class="flex gap-3 text-tertiary text-xs">
-      <a href="#" class="hover:text-secondary transition-colors">twitter</a>
+      <a href="mailto:support@wrangeapp.dev" class="hover:text-secondary transition-colors">support</a>
       <span>·</span>
       <a href="https://github.com/J-Krush/wrangle-feedback" class="hover:text-secondary transition-colors">github</a>
     </div>
