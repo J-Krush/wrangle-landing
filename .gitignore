@@ -34,4 +34,4 @@ yarn-error.log*
 .vercel
 
 # Astro
-/dist
+dist/*

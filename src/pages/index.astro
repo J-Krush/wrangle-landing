@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+
+const version = import.meta.env.APP_VERSION;
+const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
 ---
 
 <Layout title="wrangle — markdown editor for AI developers">
@@ -15,7 +18,7 @@ import "../styles/global.css";
       <span class="text-base font-bold">wrangle</span>
     </div>
     <a
-      href="https://dl.wrangeapp.dev/Wrangle-1.0.6.dmg"
+      href={downloadUrl}
       class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-6 py-2.5 text-sm font-medium text-dark hover:brightness-110 transition-all"
     >
       download
@@ -38,7 +41,7 @@ import "../styles/global.css";
         buy — $9.99
       </a>
       <a
-        href="https://dl.wrangeapp.dev/Wrangle-1.0.6.dmg"
+        href={downloadUrl}
         class="text-secondary text-sm hover:text-primary transition-colors"
       >
         download
@@ -182,7 +185,7 @@ import "../styles/global.css";
         buy — $9.99
       </a>
       <a
-        href="https://dl.wrangeapp.dev/Wrangle-1.0.6.dmg"
+        href={downloadUrl}
         class="text-secondary text-sm hover:text-primary transition-colors"
       >
         download
@@ -199,7 +202,7 @@ import "../styles/global.css";
       <a href="https://jkrush.dev" target="_blank" class="hover:text-secondary transition-colors">built by J-Krush</a>
     </div>
     <div class="flex gap-3 text-tertiary text-xs">
-      <a href="mailto:support@wrangeapp.dev" class="hover:text-secondary transition-colors">support</a>
+      <a href="mailto:support@wrangleapp.dev" class="hover:text-secondary transition-colors">support</a>
       <span>·</span>
       <a href="https://github.com/J-Krush/wrangle-feedback" class="hover:text-secondary transition-colors">github</a>
       <span>·</span>
