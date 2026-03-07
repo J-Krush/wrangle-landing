@@ -56,7 +56,7 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
   </section>
 
   <!-- Logo + Tagline -->
-  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px]">
+  <section class="flex flex-col items-center px-5 lg:px-[200px] pt-16 lg:pt-[100px] pb-28 lg:pb-[148px]">
     <img src="/images/wrangle-logo-transparent.png" alt="Wrangle logo" class="w-112 max-w-full h-auto" />
     <h2 class="text-[32px] lg:text-[40px] font-bold text-center -mt-12">wrangle your agents.</h2>
   </section>
@@ -102,6 +102,21 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
         <span class="text-tertiary text-base hidden sm:inline">—</span>
         <span class="text-secondary text-base">swift, swiftui, apple silicon. not electron.</span>
       </div>
+    </div>
+  </section>
+
+  <!-- Notifications -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// never miss an agent</h2>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        native macOS notifications tell you exactly when an agent needs input, finishes a task, or requires permission — so you can context-switch away without worry.
+      </p>
+    </div>
+    <div class="w-full max-w-[1040px] flex flex-col gap-4">
+      <img src="/images/product-images/notification-1.png" alt="Notification: Claude needs permission to use Bash" class="w-full sm:max-w-[600px] h-auto rounded-lg" loading="lazy" />
+      <img src="/images/product-images/notification-2.png" alt="Notification: Ready for input" class="w-full sm:max-w-[600px] h-auto rounded-lg sm:ml-[120px]" loading="lazy" />
+      <img src="/images/product-images/notification-3.png" alt="Notification: Claude Code needs your attention" class="w-full sm:max-w-[600px] h-auto rounded-lg sm:ml-[240px]" loading="lazy" />
     </div>
   </section>
 
