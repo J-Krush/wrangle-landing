@@ -1,9 +1,21 @@
 ---
 interface Props {
   title: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
 }
 
-const { title } = Astro.props;
+const {
+  title,
+  description = "A native macOS markdown editor for developers working with Claude Code, Gemini, and AI agents. Embedded terminals, smart notifications, token counting. $10 one-time.",
+  canonical,
+  ogImage = "/images/og-image.png",
+} = Astro.props;
+
+const siteUrl = "https://wrangleapp.dev";
+const canonicalUrl = canonical?.startsWith("http") ? canonical : canonical ? `${siteUrl}${canonical}` : undefined;
+const ogImageUrl = `${siteUrl}${ogImage}`;
 ---
 
 <!doctype html>
@@ -11,11 +23,27 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="wrangle — a native macOS editor and terminal workspace for AI-native development."
-    />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#0d1117" />
+
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:site_name" content="Wrangle" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
     <link rel="icon" type="image/png" href="/images/wrangle-logo-13.png" />
+    <link rel="apple-touch-icon" href="/images/wrangle-logo-13.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

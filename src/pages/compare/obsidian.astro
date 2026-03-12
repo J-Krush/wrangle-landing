@@ -1,0 +1,253 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+
+const version = import.meta.env.APP_VERSION;
+const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
+---
+
+<Layout
+  title="wrangle vs Obsidian — markdown editor for AI development workflows"
+  description="Obsidian is a personal knowledge base. wrangle is a native macOS markdown editor purpose-built for AI agent workflows — embedded terminals, token counting, and CLAUDE.md awareness."
+  canonical="https://wrangleapp.dev/compare/obsidian"
+>
+  <!-- Header -->
+  <header class="flex items-center justify-between px-5 lg:px-[200px] py-4">
+    <a href="/" class="flex items-center gap-2.5">
+      <img
+        src="/images/wrangle-logo-13.png"
+        alt="wrangle logo"
+        class="w-8 h-8 rounded"
+      />
+      <span class="text-base font-bold">wrangle</span>
+    </a>
+    <a
+      href="/buy"
+      class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-6 py-2.5 text-sm font-medium text-dark hover:brightness-110 transition-all"
+    >
+      buy — $10
+    </a>
+  </header>
+
+  <!-- Hero -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] pt-16 lg:pt-[100px] pb-12 lg:pb-[80px] gap-8">
+    <h1 class="text-[28px] sm:text-[36px] lg:text-[48px] font-bold text-center leading-[1.15] max-w-[1040px]">
+      wrangle vs Obsidian
+    </h1>
+    <p class="text-secondary text-base lg:text-lg text-center leading-relaxed max-w-[800px]">
+      Obsidian is a brilliant tool for building a personal knowledge base. but if you're editing AI config files and running agent sessions, you need something with a different focus entirely.
+    </p>
+  </section>
+
+  <!-- The Problem -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// different tools, different jobs</h2>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        Obsidian is built around vaults, backlinks, and graph views. it's designed for note-taking, journaling, and connecting ideas. that's a great product — but it's not what you need when you're iterating on a CLAUDE.md file while three agents run in parallel.
+      </p>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        wrangle doesn't have backlinks or a graph view. it has embedded terminals, agent notifications, and token counting. it's the workspace for the actual work of AI-native development.
+      </p>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// where wrangle wins</h2>
+      <div class="h-2"></div>
+      <div class="flex flex-col gap-5">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">embedded terminals</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">run claude code, gemini, or any CLI agent in tabbed terminals inside the app. Obsidian has no terminal at all.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">agent notifications</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">native macOS notifications when an agent needs input, finishes, or requests permission. context-switch away without worry.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">token counting</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">always in the status bar. when you're crafting prompts, knowing your token count is essential — not a nice-to-have.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">xml-in-markdown</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">&lt;tools&gt;, &lt;instructions&gt;, &lt;system&gt; blocks get proper highlighting and collapsing. Obsidian treats these as raw HTML.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">AI file awareness</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">CLAUDE.md, SKILL.md, AGENTS.md are first-class citizens with distinct icons and behavior. not just another .md file in a vault.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">native macOS</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">swift and swiftUI on apple silicon. Obsidian is electron. you feel the difference in responsiveness and memory usage.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">session context</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">see which CLAUDE.md file, skills, and MCP servers are linked to each running agent session.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where Obsidian Wins -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// where Obsidian wins</h2>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        Obsidian is unmatched for personal knowledge management. backlinks, graph view, daily notes, templates, and a massive plugin ecosystem make it the best tool for building a second brain. if you're organizing research, taking meeting notes, or building a personal wiki, Obsidian is the right call.
+      </p>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        it also runs on every platform — Windows, Linux, macOS, iOS, Android. wrangle is macOS-only.
+      </p>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        these tools aren't really competing. use Obsidian for your knowledge base. use wrangle for your AI development workspace. they solve different problems.
+      </p>
+    </div>
+  </section>
+
+  <!-- Who Should Switch -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// you might want wrangle if</h2>
+      <div class="flex flex-col gap-4">
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you've been using Obsidian to edit CLAUDE.md files and it feels like the wrong tool</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you want to run AI agents and edit their config files in the same app</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you need token counting for prompt engineering, not backlinks for note-taking</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you don't need vaults, graph view, or plugins — you need terminals and notifications</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Comparison Table -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// quick comparison</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="border-b border-border">
+              <th class="text-left py-3 pr-4 text-tertiary font-medium"></th>
+              <th class="text-left py-3 px-4 text-teal-dark font-semibold">wrangle</th>
+              <th class="text-left py-3 px-4 font-semibold">Obsidian</th>
+            </tr>
+          </thead>
+          <tbody class="text-secondary">
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">focus</td>
+              <td class="py-3 px-4">AI development workspace</td>
+              <td class="py-3 px-4">personal knowledge base</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">embedded terminals</td>
+              <td class="py-3 px-4">yes, tabbed</td>
+              <td class="py-3 px-4">no</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">agent notifications</td>
+              <td class="py-3 px-4">native macOS alerts</td>
+              <td class="py-3 px-4">no</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">token counting</td>
+              <td class="py-3 px-4">built-in, always visible</td>
+              <td class="py-3 px-4">plugin required</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">XML in markdown</td>
+              <td class="py-3 px-4">highlighted + collapsible</td>
+              <td class="py-3 px-4">rendered as HTML</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">backlinks / graph</td>
+              <td class="py-3 px-4">no</td>
+              <td class="py-3 px-4">yes, excellent</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">runtime</td>
+              <td class="py-3 px-4">native macOS (Swift)</td>
+              <td class="py-3 px-4">Electron</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">platforms</td>
+              <td class="py-3 px-4">macOS only</td>
+              <td class="py-3 px-4">everywhere</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-4 text-primary">price</td>
+              <td class="py-3 px-4">$10 one-time</td>
+              <td class="py-3 px-4">free (sync is $8/mo)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="flex flex-col items-center justify-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-6">
+    <h2 class="text-[32px] lg:text-[40px] font-bold">wrangle</h2>
+    <p class="text-secondary text-base text-center max-w-[500px]">
+      the markdown editor built for AI agent workflows. not note-taking — agent wrangling. $10, one-time, 30-day money-back guarantee.
+    </p>
+    <div class="flex flex-col items-center gap-3">
+      <a
+        href="/buy"
+        class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-8 py-4 text-base font-semibold text-dark hover:brightness-110 transition-all"
+      >
+        buy — $10
+      </a>
+      <a
+        href={downloadUrl}
+        class="text-secondary text-sm hover:text-primary transition-colors"
+      >
+        download
+      </a>
+    </div>
+    <span class="text-tertiary text-[13px]">macOS 15+ · apple silicon · one-time purchase</span>
+  </section>
+
+  <!-- Footer -->
+  <footer class="flex items-center justify-between px-5 lg:px-[200px] py-5 border-t border-border-subtle">
+    <div class="flex gap-3 text-tertiary text-xs">
+      <span>© 2026 wrangle</span>
+      <span>·</span>
+      <a href="https://jkrush.dev" target="_blank" class="hover:text-secondary transition-colors">built by J-Krush</a>
+    </div>
+    <div class="flex gap-3 text-tertiary text-xs">
+      <a href="mailto:support@wrangleapp.dev" class="hover:text-secondary transition-colors">support</a>
+      <span>·</span>
+      <a href="https://github.com/J-Krush/wrangle-feedback" class="hover:text-secondary transition-colors">github</a>
+      <span>·</span>
+      <a href="/terms" class="hover:text-secondary transition-colors">terms</a>
+      <span>·</span>
+      <a href="/refund" class="hover:text-secondary transition-colors">refund</a>
+    </div>
+  </footer>
+</Layout>

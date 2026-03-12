@@ -6,7 +6,30 @@ const version = import.meta.env.APP_VERSION;
 const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
 ---
 
-<Layout title="wrangle — markdown editor for AI developers">
+<Layout title="wrangle — markdown editor for Claude Code & AI agents (macOS)" canonical="https://wrangleapp.dev/">
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Wrangle",
+    "description": "A native macOS markdown editor and terminal workspace for developers working with AI agents like Claude Code and Gemini.",
+    "url": "https://wrangleapp.dev",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "macOS 15+",
+    "processorRequirements": "Apple Silicon",
+    "offers": {
+      "@type": "Offer",
+      "price": "9.99",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "J-Krush",
+      "url": "https://jkrush.dev"
+    },
+    "screenshot": "https://wrangleapp.dev/images/product-images/shot-1.png"
+  })} />
   <!-- Header -->
   <header class="flex items-center justify-between px-5 lg:px-[200px] py-4">
     <div class="flex items-center gap-2.5">
@@ -28,10 +51,10 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
   <!-- Hero -->
   <section class="flex flex-col items-center px-5 lg:px-[200px] pt-16 lg:pt-[100px] pb-12 lg:pb-[80px] gap-8">
     <h1 class="text-[28px] sm:text-[36px] lg:text-[52px] font-bold text-center leading-[1.15] max-w-[1040px]">
-      the md editor built for AI-native development.
+      the markdown editor built for AI-native development.
     </h1>
     <p class="text-secondary text-base lg:text-lg text-center leading-relaxed max-w-[800px]">
-      a native macOS workspace for developers who live in multi-agent workflows. edit your CLAUDE.md files, run agent sessions with embedded terminals, and get notified the moment an agent needs input or finishes — so you're never guessing which tab to check.
+      a native macOS workspace for developers who live in Claude Code, Gemini, and multi-agent workflows. edit your CLAUDE.md files, run agent sessions with embedded terminals, and get notified the moment an agent needs input or finishes — so you're never guessing which tab to check.
     </p>
     <div class="flex flex-col items-center gap-3">
       <a
@@ -49,9 +72,10 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
     </div>
     <img
       src="/images/product-images/shot-1.png"
-      alt="Wrangle markdown editor showing a rendered CLAUDE.md file"
+      alt="Wrangle markdown editor showing a rendered CLAUDE.md file with inline formatting and XML syntax highlighting"
       class="w-full max-w-[1040px] h-auto rounded shadow-2xl shadow-black/50"
-      loading="lazy"
+      loading="eager"
+      fetchpriority="high"
     />
   </section>
 
@@ -130,7 +154,7 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
     </div>
     <img
       src="/images/product-images/shot-5.png"
-      alt="Wrangle markdown editor showing a rendered CLAUDE.md file"
+      alt="Wrangle editor with XML-in-markdown syntax highlighting for AI prompt files"
       class="w-full max-w-[1040px] h-auto rounded shadow-2xl shadow-black/50"
       loading="lazy"
     />

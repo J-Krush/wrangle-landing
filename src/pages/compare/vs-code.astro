@@ -1,0 +1,243 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+
+const version = import.meta.env.APP_VERSION;
+const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
+---
+
+<Layout
+  title="wrangle vs VS Code — best markdown editor for AI prompts"
+  description="VS Code is a code editor with markdown bolted on. wrangle is a native macOS markdown editor built for AI agent workflows — with embedded terminals, token counting, and smart notifications."
+  canonical="https://wrangleapp.dev/compare/vs-code"
+>
+  <!-- Header -->
+  <header class="flex items-center justify-between px-5 lg:px-[200px] py-4">
+    <a href="/" class="flex items-center gap-2.5">
+      <img
+        src="/images/wrangle-logo-13.png"
+        alt="wrangle logo"
+        class="w-8 h-8 rounded"
+      />
+      <span class="text-base font-bold">wrangle</span>
+    </a>
+    <a
+      href="/buy"
+      class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-6 py-2.5 text-sm font-medium text-dark hover:brightness-110 transition-all"
+    >
+      buy — $10
+    </a>
+  </header>
+
+  <!-- Hero -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] pt-16 lg:pt-[100px] pb-12 lg:pb-[80px] gap-8">
+    <h1 class="text-[28px] sm:text-[36px] lg:text-[48px] font-bold text-center leading-[1.15] max-w-[1040px]">
+      wrangle vs VS Code
+    </h1>
+    <p class="text-secondary text-base lg:text-lg text-center leading-relaxed max-w-[800px]">
+      VS Code is a world-class code editor. but when your daily work shifts to editing CLAUDE.md files, system prompts, and managing AI agent sessions — a code editor starts to feel like the wrong tool.
+    </p>
+  </section>
+
+  <!-- The Problem -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// the problem with VS Code for AI workflows</h2>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        VS Code treats markdown as a second-class citizen. you get raw text on one side and a clunky preview pane on the other. XML blocks in your prompts? broken syntax highlighting. token counting? install an extension, maybe. agent notifications? hope you notice the terminal flash.
+      </p>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        if you're spending half your day in CLAUDE.md, SKILL.md, and system prompt files, you deserve an editor that actually understands what those files are.
+      </p>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// where wrangle wins</h2>
+      <div class="h-2"></div>
+      <div class="flex flex-col gap-5">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">inline rendered markdown</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">no split pane. your markdown is rendered as you type, Typora-style. headings look like headings. links are clickable. it just reads properly.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">xml-in-markdown that works</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">VS Code chokes on &lt;tools&gt; and &lt;instructions&gt; blocks inside .md files. wrangle highlights and collapses them properly.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">token counting in the status bar</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">always visible. no extensions, no config. you know your context window usage at a glance.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">smart agent notifications</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">native macOS notifications when claude needs input, finishes a task, or asks for permission. VS Code terminal just... sits there.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">native performance</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">swift and swiftUI on apple silicon. wrangle launches in under a second. VS Code is electron — 300MB of chromium for a text editor.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">AI file awareness</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">CLAUDE.md, SKILL.md, AGENTS.md get distinct icons and treatment. your file tree makes sense at a glance.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where VS Code Wins -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// where VS Code wins</h2>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        let's be real — VS Code is an incredible code editor. if you're writing python, typescript, or rust, nothing here replaces that. the extension ecosystem is unmatched. git integration is deep. debugging tools are best-in-class.
+      </p>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        wrangle is not trying to replace VS Code for writing code. it replaces the awkward part where you open a .md file in a code editor and fight with the preview pane. use both. they do different things.
+      </p>
+    </div>
+  </section>
+
+  <!-- Who Should Switch -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// you might want wrangle if</h2>
+      <div class="flex flex-col gap-4">
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you edit CLAUDE.md, system prompts, or SKILL.md files daily</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you run multiple AI agent sessions and lose track of which one needs attention</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you've been burned by prompts that are too long because you couldn't see the token count</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you want your markdown to look like markdown, not raw text with # symbols</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you're tired of VS Code butchering XML blocks in your prompt files</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Comparison Table -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// quick comparison</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="border-b border-border">
+              <th class="text-left py-3 pr-4 text-tertiary font-medium"></th>
+              <th class="text-left py-3 px-4 text-teal-dark font-semibold">wrangle</th>
+              <th class="text-left py-3 px-4 font-semibold">VS Code</th>
+            </tr>
+          </thead>
+          <tbody class="text-secondary">
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">markdown rendering</td>
+              <td class="py-3 px-4">inline, Typora-style</td>
+              <td class="py-3 px-4">split-pane preview</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">XML in markdown</td>
+              <td class="py-3 px-4">highlighted + collapsible</td>
+              <td class="py-3 px-4">broken / unstyled</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">token counting</td>
+              <td class="py-3 px-4">built-in, always visible</td>
+              <td class="py-3 px-4">extension required</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">agent notifications</td>
+              <td class="py-3 px-4">native macOS alerts</td>
+              <td class="py-3 px-4">none</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">AI file awareness</td>
+              <td class="py-3 px-4">CLAUDE.md, SKILL.md icons</td>
+              <td class="py-3 px-4">generic file icons</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">runtime</td>
+              <td class="py-3 px-4">native macOS (Swift)</td>
+              <td class="py-3 px-4">Electron</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">price</td>
+              <td class="py-3 px-4">$10 one-time</td>
+              <td class="py-3 px-4">free</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-4 text-primary">best for</td>
+              <td class="py-3 px-4">AI prompts + agent mgmt</td>
+              <td class="py-3 px-4">writing code</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="flex flex-col items-center justify-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-6">
+    <h2 class="text-[32px] lg:text-[40px] font-bold">wrangle</h2>
+    <p class="text-secondary text-base text-center max-w-[500px]">
+      the markdown editor that actually understands AI development workflows. $10, one-time, 30-day money-back guarantee.
+    </p>
+    <div class="flex flex-col items-center gap-3">
+      <a
+        href="/buy"
+        class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-8 py-4 text-base font-semibold text-dark hover:brightness-110 transition-all"
+      >
+        buy — $10
+      </a>
+      <a
+        href={downloadUrl}
+        class="text-secondary text-sm hover:text-primary transition-colors"
+      >
+        download
+      </a>
+    </div>
+    <span class="text-tertiary text-[13px]">macOS 15+ · apple silicon · one-time purchase</span>
+  </section>
+
+  <!-- Footer -->
+  <footer class="flex items-center justify-between px-5 lg:px-[200px] py-5 border-t border-border-subtle">
+    <div class="flex gap-3 text-tertiary text-xs">
+      <span>© 2026 wrangle</span>
+      <span>·</span>
+      <a href="https://jkrush.dev" target="_blank" class="hover:text-secondary transition-colors">built by J-Krush</a>
+    </div>
+    <div class="flex gap-3 text-tertiary text-xs">
+      <a href="mailto:support@wrangleapp.dev" class="hover:text-secondary transition-colors">support</a>
+      <span>·</span>
+      <a href="https://github.com/J-Krush/wrangle-feedback" class="hover:text-secondary transition-colors">github</a>
+      <span>·</span>
+      <a href="/terms" class="hover:text-secondary transition-colors">terms</a>
+      <span>·</span>
+      <a href="/refund" class="hover:text-secondary transition-colors">refund</a>
+    </div>
+  </footer>
+</Layout>

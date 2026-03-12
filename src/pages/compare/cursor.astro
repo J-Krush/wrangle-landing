@@ -1,0 +1,252 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+
+const version = import.meta.env.APP_VERSION;
+const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
+---
+
+<Layout
+  title="wrangle vs Cursor — markdown editor for AI prompt files"
+  description="Cursor is an AI code editor. wrangle is a native macOS markdown editor for the other half of AI development — editing CLAUDE.md files, system prompts, and managing agent sessions."
+  canonical="https://wrangleapp.dev/compare/cursor"
+>
+  <!-- Header -->
+  <header class="flex items-center justify-between px-5 lg:px-[200px] py-4">
+    <a href="/" class="flex items-center gap-2.5">
+      <img
+        src="/images/wrangle-logo-13.png"
+        alt="wrangle logo"
+        class="w-8 h-8 rounded"
+      />
+      <span class="text-base font-bold">wrangle</span>
+    </a>
+    <a
+      href="/buy"
+      class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-6 py-2.5 text-sm font-medium text-dark hover:brightness-110 transition-all"
+    >
+      buy — $10
+    </a>
+  </header>
+
+  <!-- Hero -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] pt-16 lg:pt-[100px] pb-12 lg:pb-[80px] gap-8">
+    <h1 class="text-[28px] sm:text-[36px] lg:text-[48px] font-bold text-center leading-[1.15] max-w-[1040px]">
+      wrangle vs Cursor
+    </h1>
+    <p class="text-secondary text-base lg:text-lg text-center leading-relaxed max-w-[800px]">
+      Cursor is an AI-powered code editor. wrangle is a markdown editor and agent workspace. they're solving different problems — and if you use Cursor for code, you might want wrangle for everything else.
+    </p>
+  </section>
+
+  <!-- The Story -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// AI coding vs AI configuring</h2>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        Cursor is great at what it does — AI-assisted code completion, inline chat, codebase-aware suggestions. it's a code editor that happens to have AI built in. but it's still fundamentally a code editor.
+      </p>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        wrangle is for the other side of AI development: the markdown files that configure your agents. the system prompts. the CLAUDE.md files that define behavior. the SKILL.md files that describe capabilities. editing those in a code editor — even an AI-powered one — is like writing a novel in Excel. it technically works, but it's not the right tool.
+      </p>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// where wrangle wins</h2>
+      <div class="h-2"></div>
+      <div class="flex flex-col gap-5">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">inline rendered markdown</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">your prompts and config files render as you type. headings look like headings, not # symbols. Cursor shows raw markdown like any code editor.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">token counting</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">always visible in the status bar. when you're authoring context that goes into an LLM, knowing your token count isn't optional.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">xml-in-markdown</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">&lt;tools&gt;, &lt;instructions&gt;, &lt;system&gt; blocks get proper highlighting and collapsing. not treated as broken HTML.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">agent session management</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">run multiple claude code or gemini sessions in tabbed terminals. see which config files and MCP servers are linked to each one.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">smart notifications</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">native macOS notifications when agents need input or finish. work on something else and get pulled back at exactly the right moment.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">$10 one-time</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">no subscription. Cursor's AI features run $20/month. wrangle is ten bucks, forever.</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-base font-semibold">native macOS</span>
+          <span class="text-tertiary text-base hidden sm:inline">—</span>
+          <span class="text-secondary text-base">swift + swiftUI on apple silicon. Cursor is another electron app. wrangle is snappy.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where Cursor Wins -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// where Cursor wins</h2>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        Cursor is a genuine code editor with AI superpowers. inline completions, codebase-aware chat, automatic refactoring — the things that make writing code faster. it's excellent at that job.
+      </p>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        wrangle doesn't do code completion. it doesn't do AI-assisted refactoring. it doesn't understand your codebase. that's not its job.
+      </p>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        use Cursor (or VS Code, or Zed) for writing code. use wrangle for the markdown and agent management layer that sits alongside it.
+      </p>
+    </div>
+  </section>
+
+  <!-- Who Should Use Both -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// you might want wrangle if</h2>
+      <div class="flex flex-col gap-4">
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you use Cursor for code but need a better experience for CLAUDE.md and prompt files</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you run multiple AI agent sessions and want a central place to manage them</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you want token counting in your editor, not buried in an API dashboard</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you're tired of paying $20/month for yet another subscription and want a $10 one-time tool that does one thing well</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-teal-dark text-base">→</span>
+          <span class="text-secondary text-base">you want native macOS performance, not another electron app eating your RAM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Comparison Table -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// quick comparison</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="border-b border-border">
+              <th class="text-left py-3 pr-4 text-tertiary font-medium"></th>
+              <th class="text-left py-3 px-4 text-teal-dark font-semibold">wrangle</th>
+              <th class="text-left py-3 px-4 font-semibold">Cursor</th>
+            </tr>
+          </thead>
+          <tbody class="text-secondary">
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">focus</td>
+              <td class="py-3 px-4">markdown + agent workspace</td>
+              <td class="py-3 px-4">AI-powered code editor</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">markdown rendering</td>
+              <td class="py-3 px-4">inline, Typora-style</td>
+              <td class="py-3 px-4">raw text / preview pane</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">token counting</td>
+              <td class="py-3 px-4">built-in, always visible</td>
+              <td class="py-3 px-4">no</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">agent notifications</td>
+              <td class="py-3 px-4">native macOS alerts</td>
+              <td class="py-3 px-4">no</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">AI code completion</td>
+              <td class="py-3 px-4">no</td>
+              <td class="py-3 px-4">yes, excellent</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">XML in markdown</td>
+              <td class="py-3 px-4">highlighted + collapsible</td>
+              <td class="py-3 px-4">broken / unstyled</td>
+            </tr>
+            <tr class="border-b border-border-subtle">
+              <td class="py-3 pr-4 text-primary">runtime</td>
+              <td class="py-3 px-4">native macOS (Swift)</td>
+              <td class="py-3 px-4">Electron</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-4 text-primary">price</td>
+              <td class="py-3 px-4">$10 one-time</td>
+              <td class="py-3 px-4">free + $20/mo for AI</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="flex flex-col items-center justify-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-6">
+    <h2 class="text-[32px] lg:text-[40px] font-bold">wrangle</h2>
+    <p class="text-secondary text-base text-center max-w-[500px]">
+      the companion to your code editor. manage AI prompts, configs, and agent sessions in one native app. $10, one-time.
+    </p>
+    <div class="flex flex-col items-center gap-3">
+      <a
+        href="/buy"
+        class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-8 py-4 text-base font-semibold text-dark hover:brightness-110 transition-all"
+      >
+        buy — $10
+      </a>
+      <a
+        href={downloadUrl}
+        class="text-secondary text-sm hover:text-primary transition-colors"
+      >
+        download
+      </a>
+    </div>
+    <span class="text-tertiary text-[13px]">macOS 15+ · apple silicon · one-time purchase</span>
+  </section>
+
+  <!-- Footer -->
+  <footer class="flex items-center justify-between px-5 lg:px-[200px] py-5 border-t border-border-subtle">
+    <div class="flex gap-3 text-tertiary text-xs">
+      <span>© 2026 wrangle</span>
+      <span>·</span>
+      <a href="https://jkrush.dev" target="_blank" class="hover:text-secondary transition-colors">built by J-Krush</a>
+    </div>
+    <div class="flex gap-3 text-tertiary text-xs">
+      <a href="mailto:support@wrangleapp.dev" class="hover:text-secondary transition-colors">support</a>
+      <span>·</span>
+      <a href="https://github.com/J-Krush/wrangle-feedback" class="hover:text-secondary transition-colors">github</a>
+      <span>·</span>
+      <a href="/terms" class="hover:text-secondary transition-colors">terms</a>
+      <span>·</span>
+      <a href="/refund" class="hover:text-secondary transition-colors">refund</a>
+    </div>
+  </footer>
+</Layout>

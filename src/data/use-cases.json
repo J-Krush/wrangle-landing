@@ -1,0 +1,202 @@
+[
+  {
+    "slug": "claude-md-editor",
+    "title": "CLAUDE.md Editor for macOS — Wrangle",
+    "metaDescription": "Edit CLAUDE.md files with a native macOS editor that understands AI project files. Token counting, XML highlighting, and embedded terminals. $10 one-time.",
+    "h1": "the CLAUDE.md editor you've been missing",
+    "intro": "CLAUDE.md is the file that shapes how Claude Code works in your project. It deserves better than a code editor's markdown preview pane.",
+    "body": "Every Claude Code project starts with a CLAUDE.md file. It defines your coding conventions, project structure, and instructions that Claude follows on every interaction. But editing it in VS Code means staring at raw markdown, no token count, and no sense of how the rendered output actually reads.\n\nWrangle gives CLAUDE.md files first-class treatment. The file tree recognizes them with a distinct icon. The editor renders your markdown inline — headers, lists, code blocks, all formatted as you type. The status bar shows a live token count so you know exactly how much context you're consuming before Claude even reads it.\n\nIf your CLAUDE.md contains XML blocks like <instructions> or <system>, Wrangle highlights them with proper syntax coloring and lets you collapse them to focus on the section you're editing. No more scrolling past walls of XML to find the line you need.\n\nAnd because Wrangle has embedded terminals, you can edit your CLAUDE.md and immediately test it by running Claude Code in a tab right next to your editor. One app, one workflow.",
+    "features": ["AI file awareness", "Token counting", "XML-in-markdown highlighting", "Embedded terminals", "Inline markdown rendering"],
+    "keyword": "CLAUDE.md editor"
+  },
+  {
+    "slug": "markdown-editor-token-counting",
+    "title": "Markdown Editor with Token Counting — Wrangle",
+    "metaDescription": "A macOS markdown editor with always-visible token counting in the status bar. Know your context window usage before you send. $10 one-time purchase.",
+    "h1": "markdown editor with built-in token counting",
+    "intro": "When you're writing prompts and system instructions for AI models, every token matters. Wrangle shows you the count in real time.",
+    "body": "If you've ever hit a context window limit mid-conversation, you know the pain. You paste in your system prompt, your CLAUDE.md, your skill definitions — and suddenly you're over budget with no warning. Most markdown editors don't even know what a token is.\n\nWrangle puts a live token count in the status bar for every file you edit. As you type, the count updates. You always know exactly how much context your file will consume when fed to Claude, GPT, or any other model. No more copying text into a separate tokenizer tool.\n\nThis isn't just a nice-to-have — it changes how you write. You start trimming unnecessary instructions. You notice when a section balloons. You keep your prompts lean and effective because the feedback is always visible, not hidden behind a separate tool or API call.\n\nWrangle counts tokens using the same tokenization approach the models use, so the number you see is the number that matters. Combined with inline markdown rendering and XML block collapsing, you get a complete prompt-authoring environment in a native macOS app.",
+    "features": ["Always-visible token count", "Real-time updates as you type", "Inline markdown rendering", "Native macOS performance", "Works with any .md file"],
+    "keyword": "markdown editor token counting"
+  },
+  {
+    "slug": "ai-prompt-editor-macos",
+    "title": "AI Prompt Editor for macOS — Wrangle",
+    "metaDescription": "A native macOS editor purpose-built for writing AI prompts, system instructions, and agent configs. XML highlighting, token counting, embedded terminals.",
+    "h1": "a native macOS editor for AI prompts",
+    "intro": "Writing AI prompts isn't regular writing. It's a mix of markdown, XML, structured instructions, and precise token budgets. Your editor should understand that.",
+    "body": "AI prompt engineering has become a daily activity for thousands of developers. You're writing system prompts, few-shot examples, tool definitions wrapped in XML, and project instructions that shape how AI agents behave. But you're doing it in editors that were built for code or prose — not this weird hybrid that prompt files actually are.\n\nWrangle is a macOS-native markdown editor designed specifically for this workflow. It renders your markdown inline as you type (like Typora), but adds features no general-purpose editor has: XML tag highlighting for <tools>, <instructions>, and <system> blocks. Collapsible XML sections so you can focus on one part at a time. A token counter that's always visible in the status bar.\n\nBecause it's a native Swift app — not Electron — it launches instantly, uses minimal memory, and feels like a real Mac app. Keyboard shortcuts work the way you expect. The app integrates with macOS notifications so your embedded terminal sessions can alert you when an agent finishes or needs input.\n\nIf you write prompts for Claude, GPT, Gemini, or any other model, Wrangle is the $10 tool that makes the process dramatically better.",
+    "features": ["XML tag highlighting and collapsing", "Token counting in status bar", "Inline markdown rendering", "Native macOS (Swift/SwiftUI)", "Embedded terminals for testing prompts"],
+    "keyword": "AI prompt editor macOS"
+  },
+  {
+    "slug": "system-prompt-editor",
+    "title": "System Prompt Editor for AI Development — Wrangle",
+    "metaDescription": "Edit system prompts with token counting, XML highlighting, and inline markdown rendering. A native macOS editor built for AI developers. $10 one-time.",
+    "h1": "edit system prompts like they deserve",
+    "intro": "System prompts are the most important text you write as an AI developer. They set the behavior, personality, and guardrails for every model interaction.",
+    "body": "A system prompt is the invisible hand guiding every AI conversation. It tells the model who it is, what it can do, and how it should respond. And yet most developers edit these critical files in VS Code with a split-pane markdown preview, constantly switching between raw text and rendered output.\n\nWrangle recognizes system prompt files (system-prompt.md, system_prompt.md) and gives them the attention they deserve. The editor renders markdown inline — you see the formatted output as you type, not raw syntax. XML blocks that define tools or instructions get syntax highlighting and can be collapsed when you're focused on other sections.\n\nThe always-visible token count is crucial for system prompts. These files often grow over time as you add edge cases and refine behavior. Wrangle shows you exactly how many tokens your prompt consumes, so you can make informed tradeoffs about what to include.\n\nWith embedded terminals, you can edit a system prompt and immediately test it by running an agent session in the next tab. See how your changes affect behavior without leaving the app. That tight feedback loop is what turns good prompts into great ones.",
+    "features": ["System prompt file recognition", "Token counting", "XML block highlighting", "Inline rendering", "Embedded terminals for testing"],
+    "keyword": "system prompt editor"
+  },
+  {
+    "slug": "skill-md-editor",
+    "title": "SKILL.md Editor — Edit Claude Code Skills on macOS — Wrangle",
+    "metaDescription": "Edit SKILL.md files with a dedicated macOS editor. Token counting, XML highlighting, and inline markdown rendering for Claude Code skill definitions.",
+    "h1": "the SKILL.md editor for Claude Code developers",
+    "intro": "Claude Code skills are defined in SKILL.md files — markdown with structured instructions, tool definitions, and behavioral guidelines. Wrangle was built for exactly this.",
+    "body": "Skills are one of Claude Code's most powerful features. They let you define reusable behaviors, custom workflows, and domain-specific instructions that Claude can invoke during coding sessions. Each skill lives in a SKILL.md file — a carefully structured markdown document that mixes prose instructions with XML tool definitions.\n\nEditing SKILL.md files in VS Code is painful. The XML blocks break syntax highlighting. You can't see how the rendered markdown will look without a preview pane. And there's no way to know how many tokens your skill consumes until you actually load it.\n\nWrangle treats SKILL.md files as first-class citizens. They get a distinct icon in the file tree. The editor renders markdown inline while properly highlighting XML blocks like <tools> and <instructions>. You can collapse XML sections to focus on the prose, or expand them to fine-tune tool definitions.\n\nThe token counter in the status bar is especially useful for skills, since bloated skill files eat into your conversation context. Keep your skills lean and well-structured with instant feedback on their token cost. Then test them immediately using the embedded terminal.",
+    "features": ["SKILL.md file recognition", "XML tag highlighting", "Collapsible XML sections", "Live token counting", "Embedded terminals"],
+    "keyword": "SKILL.md editor"
+  },
+  {
+    "slug": "agents-md-editor",
+    "title": "AGENTS.md Editor for macOS — Wrangle",
+    "metaDescription": "Edit AGENTS.md files with a native macOS editor built for multi-agent development. File awareness, token counting, and embedded terminals. $10.",
+    "h1": "edit AGENTS.md files with proper tooling",
+    "intro": "AGENTS.md files define how your AI agents coordinate, what roles they play, and how they interact. Wrangle gives these files the editing experience they need.",
+    "body": "Multi-agent development is becoming the default workflow for complex projects. Your AGENTS.md file orchestrates how different AI agents collaborate — defining roles, handoff protocols, shared context, and individual capabilities. It's one of the most important files in your project, and it's usually edited in a tool that doesn't understand it at all.\n\nWrangle recognizes AGENTS.md files automatically. They appear with a distinct icon in the file tree, making them easy to spot across your project structure. The editor renders the markdown inline, so you see formatted output as you write — headers, lists, code blocks, all styled in real time.\n\nWhen your AGENTS.md contains XML blocks defining agent tools or coordination protocols, Wrangle highlights them with proper syntax coloring instead of treating them as broken markdown. Collapse sections you're not actively editing to keep your focus tight.\n\nThe embedded terminal lets you run agent sessions right next to your editor. Change an agent's role definition, then immediately test the behavior. Smart notifications tell you when any agent session needs input or completes a task, so you can manage multiple agents without constantly polling terminal tabs.",
+    "features": ["AGENTS.md file recognition", "Inline markdown rendering", "XML highlighting", "Token counting", "Multi-terminal agent sessions"],
+    "keyword": "AGENTS.md editor"
+  },
+  {
+    "slug": "xml-markdown-editor",
+    "title": "XML-in-Markdown Editor for AI Prompts — Wrangle",
+    "metaDescription": "Edit markdown files with embedded XML blocks. Proper syntax highlighting and collapsible sections for <tools>, <instructions>, <system> tags. macOS native.",
+    "h1": "finally, an editor that handles XML inside markdown",
+    "intro": "AI prompt files mix markdown prose with XML-structured blocks. Every other editor chokes on this. Wrangle was designed for it.",
+    "body": "If you work with AI models, your prompt files probably look something like this: regular markdown for instructions, peppered with XML blocks like <tools>, <instructions>, <system>, and <examples>. It's a format that makes perfect sense for AI consumption but breaks every existing markdown editor.\n\nVS Code treats the XML as invalid markdown syntax. Obsidian ignores it. Typora renders it as raw HTML. None of them give you what you actually need: proper syntax highlighting for the XML blocks, the ability to collapse them, and clean inline rendering of the surrounding markdown.\n\nWrangle handles this natively. XML blocks get distinct visual treatment — highlighted borders, syntax-colored tags, and one-click collapsing. The markdown around them renders inline as you type. You can focus on writing the prose instructions while keeping the XML structure visible but compact.\n\nThis isn't a plugin or an extension — it's built into the core editor. Every XML tag is recognized, styled, and collapsible out of the box. For developers who write AI prompts daily, this single feature eliminates a constant source of friction.",
+    "features": ["XML tag syntax highlighting", "Collapsible XML sections", "Inline markdown rendering", "Support for <tools>, <instructions>, <system>", "Native macOS performance"],
+    "keyword": "XML in markdown editor"
+  },
+  {
+    "slug": "claude-code-terminal-mac",
+    "title": "Claude Code Terminal for Mac — Embedded Agent Terminals — Wrangle",
+    "metaDescription": "Run Claude Code sessions in embedded macOS terminals with smart notifications. Know when agents need input or finish tasks. Editor + terminal in one app.",
+    "h1": "run Claude Code in embedded terminals on your Mac",
+    "intro": "Stop switching between your editor and Terminal.app. Wrangle puts Claude Code sessions right next to your markdown files with smart notifications that pull you back when agents need you.",
+    "body": "Running Claude Code typically means opening Terminal.app or iTerm, navigating to your project, and starting a session. Then you switch to VS Code to check a file. Then back to the terminal. Then you forget which terminal tab has which project. Then you miss when Claude asks for permission because the tab was buried.\n\nWrangle eliminates this entire dance. Embedded tabbed terminals let you run multiple Claude Code sessions inside the same app where you edit your CLAUDE.md files. Each terminal tab shows its project context — the linked Claude file, active skills, and connected MCP servers — so you always know what's running where.\n\nThe real game-changer is smart notifications. When Claude Code needs permission to run a tool, needs your input, or finishes a task, Wrangle sends a native macOS notification. Click it and you're taken directly to the right terminal tab. No more polling. No more missed prompts.\n\nYou can run multiple agent sessions across different projects simultaneously. Switch between them with keyboard shortcuts. The terminal state persists — nothing gets lost when you move between tabs or projects.",
+    "features": ["Embedded tabbed terminals", "Smart macOS notifications", "Session context display", "Multi-project support", "Keyboard shortcut navigation"],
+    "keyword": "Claude Code terminal Mac"
+  },
+  {
+    "slug": "ai-agent-notification-app",
+    "title": "AI Agent Notifications — Never Miss an Agent Prompt — Wrangle",
+    "metaDescription": "Get native macOS notifications when AI agents need input, finish tasks, or require permissions. Stop polling terminals. Wrangle keeps you in the loop.",
+    "h1": "never miss when an AI agent needs you",
+    "intro": "You kicked off three Claude Code sessions and switched to another task. One of them needs permission. Another finished. A third is waiting for input. How long before you notice?",
+    "body": "The biggest friction in multi-agent workflows isn't the AI — it's the human. You start an agent, context-switch to something else, and then spend the next ten minutes wondering if it's done yet. You check one terminal — still running. Check another — it's been waiting for input for five minutes. The time you lose to terminal-polling adds up fast.\n\nWrangle solves this with native macOS notifications. Every embedded terminal session monitors for three key events: the agent needs permission to use a tool, the agent is waiting for your input, or the agent has completed its task. When any of these happen, you get an instant notification.\n\nThese aren't generic alerts — they're contextual. The notification tells you which project, which session, and what's needed. Click it and Wrangle brings you directly to that terminal tab, ready to respond. No hunting, no guessing.\n\nThis works across all your running sessions. You can confidently start multiple agents, switch to writing documentation or editing prompts, and trust that Wrangle will pull you back at exactly the right moment. It's the missing piece that makes multi-agent development actually practical.",
+    "features": ["Native macOS notifications", "Permission request alerts", "Task completion alerts", "Input-needed alerts", "One-click navigation to the right session"],
+    "keyword": "AI agent notifications"
+  },
+  {
+    "slug": "multi-agent-workspace-mac",
+    "title": "Multi-Agent Workspace for Mac — Wrangle",
+    "metaDescription": "Manage multiple AI agent sessions in one native macOS workspace. Embedded terminals, smart notifications, session context, and markdown editing. $10.",
+    "h1": "one workspace for all your AI agents",
+    "intro": "Running Claude in one terminal, Gemini in another, editing prompts in VS Code, and checking notifications across three different apps? There's a better way.",
+    "body": "Modern AI development means running multiple agents simultaneously. You might have Claude Code refactoring one module while Gemini CLI reviews another. You're editing system prompts for both, checking CLAUDE.md, updating AGENTS.md, and trying to keep track of which agent is doing what.\n\nWrangle consolidates all of this into one native macOS workspace. The editor handles your markdown and prompt files with inline rendering, XML highlighting, and token counting. Tabbed terminals run your agent sessions side by side. Session context shows you exactly what each terminal is connected to — which project, which Claude file, which skills are active.\n\nSmart notifications mean you never have to poll. When any agent across any project needs your attention, Wrangle tells you and takes you straight there. This turns the chaos of multi-agent development into a manageable workflow.\n\nBecause it's a native Mac app built with Swift and SwiftUI, everything feels fast. Switching between editor and terminal is instant. Notifications integrate with macOS natively. The app uses minimal resources despite running multiple terminal sessions. It's the unified workspace that multi-agent development has been missing.",
+    "features": ["Tabbed terminal sessions", "Smart notifications", "Session context display", "Markdown editor with AI awareness", "Native macOS performance"],
+    "keyword": "multi-agent workspace Mac"
+  },
+  {
+    "slug": "typora-alternative-developers",
+    "title": "Typora Alternative for Developers — Wrangle",
+    "metaDescription": "Like Typora's inline markdown rendering, but built for developers. Embedded terminals, token counting, XML highlighting, AI file awareness. macOS native.",
+    "h1": "a Typora alternative built for AI developers",
+    "intro": "Typora's inline rendering changed how people write markdown. Wrangle takes that same approach and adds everything a developer working with AI agents actually needs.",
+    "body": "Typora proved that the best way to edit markdown is to render it inline — no split panes, no raw syntax, just formatted text as you type. It's a brilliant approach, and if you've used Typora, you know how hard it is to go back to anything else.\n\nBut Typora wasn't built for developers who work with AI agents. It doesn't understand CLAUDE.md or SKILL.md files. It renders XML tags as HTML instead of highlighting them. There's no token counter. And there's definitely no embedded terminal for running agent sessions.\n\nWrangle keeps what makes Typora great — the inline rendered editing experience — and builds on it for AI-native development. Your markdown renders as you type. Headers, bold, code blocks, lists — all formatted in real time. But now you also get XML block highlighting for <tools> and <instructions> tags. A live token counter in the status bar. File tree icons that distinguish between CLAUDE.md, SKILL.md, and AGENTS.md.\n\nPlus embedded terminals with smart notifications, session context for every running agent, and the native macOS performance that comes from being a Swift app instead of Electron. If Typora is your baseline, Wrangle is Typora plus everything you need for AI development.",
+    "features": ["Inline markdown rendering", "XML-in-markdown support", "Token counting", "AI file awareness", "Embedded terminals", "Native macOS (not Electron)"],
+    "keyword": "Typora alternative for developers"
+  },
+  {
+    "slug": "mcp-server-config-editor",
+    "title": "MCP Server Config Editor for macOS — Wrangle",
+    "metaDescription": "Edit MCP server configurations alongside your AI agent sessions. See connected servers per terminal, edit configs, and test immediately. macOS native.",
+    "h1": "edit MCP configs with your agent sessions in view",
+    "intro": "MCP servers extend what AI agents can do. Wrangle shows you which MCP servers are connected to each session and lets you edit their configs right next to the terminal.",
+    "body": "The Model Context Protocol (MCP) is how AI agents connect to external tools — databases, APIs, file systems, custom services. Configuring MCP servers means editing JSON or markdown config files, then restarting your agent session to test. It's a cycle you repeat dozens of times as you dial in your setup.\n\nWrangle makes this cycle faster by putting everything in one place. The editor handles your MCP config files with the same inline rendering and syntax support it gives to all markdown and structured files. The embedded terminal runs your agent session right next to the editor. And the session context panel shows you exactly which MCP servers are connected to the current terminal.\n\nThis visibility changes how you work with MCP. Instead of guessing whether a server connected correctly, you can see it. Instead of switching between apps to edit a config and restart a session, you do it in two adjacent tabs. The feedback loop shrinks from minutes to seconds.\n\nFor developers building custom MCP servers or integrating third-party ones, Wrangle gives you the editing and testing environment that makes the iteration fast and the debugging visible.",
+    "features": ["MCP server visibility per session", "Embedded terminals", "Config file editing", "Session context display", "Fast edit-test cycle"],
+    "keyword": "MCP server config editor"
+  },
+  {
+    "slug": "markdown-editor-developers-mac",
+    "title": "Markdown Editor for Developers on Mac — Wrangle",
+    "metaDescription": "A native macOS markdown editor built for developers. Inline rendering, embedded terminals, fuzzy finder, and AI file awareness. Not Electron. $10.",
+    "h1": "a markdown editor that actually gets developers",
+    "intro": "Most markdown editors are built for writers. Wrangle is built for developers who live in markdown — README files, documentation, AI configs, system prompts.",
+    "body": "Developers write more markdown than anyone. README files, documentation, changelogs, PR descriptions, AI prompt files, project configs. But the tools are either writer-focused apps like iA Writer that lack developer features, or code editors like VS Code that treat markdown as a second-class citizen.\n\nWrangle sits in the middle. It's a proper markdown editor with inline rendering — your text formats as you type, no split-pane preview needed. But it's built with developer workflows in mind. A fuzzy finder (Cmd+P) lets you jump between files across all your bookmarked projects. Embedded terminals mean you can run commands without leaving the app. The file tree understands project structures.\n\nFor developers working with AI, the features go deeper. Token counting in the status bar. XML-in-markdown highlighting for prompt files. Distinct file icons for CLAUDE.md, SKILL.md, and AGENTS.md. Smart notifications when agent sessions need attention.\n\nAnd because it's a native macOS app built with Swift and SwiftUI, it launches instantly, scrolls smoothly, and uses a fraction of the memory that Electron apps consume. It's the markdown editor that respects both your workflow and your machine's resources.",
+    "features": ["Inline markdown rendering", "Fuzzy finder (Cmd+P)", "Embedded terminals", "Native macOS (Swift)", "AI file awareness", "Minimal memory footprint"],
+    "keyword": "markdown editor for developers Mac"
+  },
+  {
+    "slug": "native-macos-markdown-editor",
+    "title": "Native macOS Markdown Editor — Swift, Not Electron — Wrangle",
+    "metaDescription": "A true native macOS markdown editor built with Swift and SwiftUI. Fast launch, low memory, Apple Silicon optimized. Inline rendering and AI features. $10.",
+    "h1": "a native macOS markdown editor — swift, not electron",
+    "intro": "Every popular markdown editor is Electron. Wrangle is built with Swift and SwiftUI, runs on Apple Silicon natively, and uses a fraction of the memory.",
+    "body": "Open Obsidian, Typora, or almost any markdown editor and check Activity Monitor. You'll see Chromium helper processes eating hundreds of megabytes of RAM. That's Electron — a web browser pretending to be a desktop app. It works, but it's wasteful, and you can feel the difference.\n\nWrangle is built with Swift and SwiftUI, targeting macOS 15+ and Apple Silicon. It launches in under a second. Scrolling is smooth at any document size. Memory usage stays low because there's no embedded browser — just native macOS frameworks doing what they were designed to do.\n\nThis isn't just about performance snobbery. A native app means real macOS integration. Notifications work through the system notification center. Keyboard shortcuts follow Apple's Human Interface Guidelines. The app respects your system appearance settings. File dialogs are the real macOS file dialogs, not web recreations.\n\nYou also get all the features you'd expect from a modern markdown editor — inline rendering, XML block highlighting, token counting — plus developer-specific tools like embedded terminals, a fuzzy finder, and AI file awareness. All of it running natively on your Mac, the way apps should.",
+    "features": ["Swift + SwiftUI", "Apple Silicon native", "Sub-second launch", "Low memory usage", "Real macOS integration", "System notifications"],
+    "keyword": "native macOS markdown editor"
+  },
+  {
+    "slug": "claude-code-workflow-app",
+    "title": "Claude Code Workflow App — Edit, Run, Notify — Wrangle",
+    "metaDescription": "The complete Claude Code workflow in one app. Edit CLAUDE.md files, run sessions in embedded terminals, get notified when Claude needs you. macOS native.",
+    "h1": "the complete Claude Code workflow in one app",
+    "intro": "Edit your CLAUDE.md. Run Claude Code in an embedded terminal. Get notified when it needs input. All without leaving Wrangle.",
+    "body": "Working with Claude Code today means juggling at least two apps. You edit your CLAUDE.md and skill files in VS Code or a text editor. You run Claude Code sessions in Terminal.app or iTerm. You check back manually to see if Claude is waiting for permission or has finished. It's a fragmented workflow that adds friction to every session.\n\nWrangle unifies all of this. The editor gives your CLAUDE.md files first-class treatment with inline markdown rendering, XML block highlighting, and live token counting. Tabbed terminals let you run Claude Code sessions inside the same app. Session context shows you the active Claude file, loaded skills, and connected MCP servers for every running session.\n\nThe smart notification system is what ties it together. When Claude needs permission to execute a tool, Wrangle notifies you. When it's waiting for input, you know immediately. When it completes a task, you get an alert. Click any notification and you're taken directly to the right terminal tab.\n\nThis tight integration means you spend less time managing your tools and more time working with Claude. Edit a skill file, test it immediately, iterate based on results — all in one window. It's the workflow Claude Code deserves.",
+    "features": ["CLAUDE.md editing", "Embedded Claude Code terminals", "Smart notifications", "Session context", "Skills and MCP visibility", "One-window workflow"],
+    "keyword": "Claude Code workflow app"
+  },
+  {
+    "slug": "prompt-engineering-editor",
+    "title": "Prompt Engineering Editor for macOS — Wrangle",
+    "metaDescription": "A macOS markdown editor designed for prompt engineering. Token counting, XML highlighting, inline rendering, and embedded terminals for testing. $10.",
+    "h1": "an editor built for prompt engineering",
+    "intro": "Prompt engineering is iterative writing with hard constraints. You need to see token counts, render markdown, handle XML blocks, and test quickly. Wrangle does all of it.",
+    "body": "Prompt engineering is unlike any other kind of writing. You're crafting instructions for a machine with a fixed context window. Every word has a token cost. Structure matters — XML blocks define tool interfaces, markdown formatting affects readability for both the model and the human reviewer. And you need to test constantly.\n\nMost prompt engineers cobble together a workflow from multiple tools: a text editor for writing, a tokenizer website for counting, a terminal for testing, and maybe a preview tool for rendering. Wrangle replaces all of that with a single native macOS app.\n\nThe editor renders markdown inline, so you see the formatted output as you write. XML blocks get proper syntax highlighting and can be collapsed to focus on specific sections. The status bar shows a live token count that updates with every keystroke — no more copying to an external tokenizer.\n\nEmbedded terminals let you test your prompts immediately. Write a system prompt, run an agent, see the results, tweak, repeat. This tight feedback loop is what separates good prompt engineers from great ones. And with smart notifications, you can kick off a test and work on something else, knowing Wrangle will pull you back when results are ready.",
+    "features": ["Live token counting", "Inline markdown rendering", "XML block highlighting", "Embedded terminals for testing", "Collapsible sections", "Instant edit-test loop"],
+    "keyword": "prompt engineering editor"
+  },
+  {
+    "slug": "vscode-markdown-alternative",
+    "title": "VS Code Markdown Alternative for AI Files — Wrangle",
+    "metaDescription": "Stop fighting VS Code's markdown preview. Wrangle gives you inline rendering, XML highlighting, token counting, and embedded terminals. macOS native. $10.",
+    "h1": "stop fighting VS Code for your markdown files",
+    "intro": "VS Code is a great code editor. It's a terrible markdown editor. If you're editing CLAUDE.md, system prompts, or AI config files, you deserve better.",
+    "body": "VS Code handles markdown the way it handles everything else — as code. You get a split-pane preview that's always slightly out of sync, raw syntax in the editor, and an extension ecosystem that partially addresses the problem but never fully solves it. For code, this is fine. For the markdown files that AI developers live in, it's friction you feel every day.\n\nThe worst part is XML. AI prompt files are full of XML blocks — <tools>, <instructions>, <system> — and VS Code's markdown mode has no idea what to do with them. The syntax highlighting breaks. The preview renders them as HTML tags. You end up fighting the editor instead of focusing on your content.\n\nWrangle approaches markdown editing differently. Text renders inline as you type — like Typora, but for developers. XML blocks get proper highlighting with collapsible sections. Token counting lives in the status bar so you're always aware of context window usage. The file tree recognizes AI-specific files like CLAUDE.md and SKILL.md.\n\nYou don't have to abandon VS Code for your code. But for the markdown files that define how your AI agents work, Wrangle gives you an editing experience that VS Code was never designed to provide.",
+    "features": ["Inline rendering (no split pane)", "XML block support", "Token counting", "AI file recognition", "Native macOS", "Works alongside VS Code"],
+    "keyword": "VS Code markdown alternative"
+  },
+  {
+    "slug": "gemini-cli-terminal-workspace",
+    "title": "Gemini CLI Terminal Workspace for Mac — Wrangle",
+    "metaDescription": "Run Gemini CLI sessions in embedded macOS terminals with smart notifications. Edit prompts, run agents, and get notified when they need you. One app.",
+    "h1": "run Gemini CLI with embedded terminals and notifications",
+    "intro": "Gemini CLI brings Google's AI to your terminal. Wrangle gives it a proper workspace — embedded terminals, smart notifications, and a prompt editor all in one app.",
+    "body": "Gemini CLI is gaining traction as a powerful command-line AI agent. But like Claude Code, running it means opening a separate terminal, losing track of sessions, and manually checking whether the agent needs input or has finished.\n\nWrangle's embedded terminals work with any command-line tool, including Gemini CLI. Run multiple Gemini sessions in tabbed terminals, each with its own project context. The smart notification system detects when a session needs your attention and alerts you through native macOS notifications.\n\nThe editor side handles your prompt files, system instructions, and configuration documents with inline markdown rendering and XML block support. Whether you're writing prompts for Gemini, Claude, or both, the token counter keeps you aware of context usage.\n\nFor developers who use both Claude Code and Gemini CLI — or any combination of AI agents — Wrangle provides a single workspace where all your sessions live. No more hunting through terminal tabs across multiple apps. No more missed prompts. Just one window with everything you need to manage multiple AI agents effectively.",
+    "features": ["Embedded terminals for any CLI agent", "Smart notifications", "Multi-session management", "Prompt file editing", "Token counting", "Works with Gemini, Claude, and any CLI tool"],
+    "keyword": "Gemini CLI terminal workspace"
+  },
+  {
+    "slug": "context-window-management",
+    "title": "Context Window Management Tool for AI Developers — Wrangle",
+    "metaDescription": "Manage your AI context window with live token counting, collapsible XML sections, and lean prompt editing. See token costs as you write. macOS native.",
+    "h1": "manage your context window before you blow it",
+    "intro": "Context windows have hard limits. Every token in your system prompt, CLAUDE.md, and skills is a token you can't use for conversation. Wrangle helps you see and manage these costs.",
+    "body": "Every AI model has a context window, and every file you feed it — system prompts, CLAUDE.md, skills, tool definitions — eats into that budget. Go over and you get truncated responses, lost context, or outright failures. But most developers have no visibility into how much context their files consume until it's too late.\n\nWrangle puts token counting front and center. The status bar shows a live count for whatever file you're editing. As you type, add sections, or paste content, the number updates in real time. You always know exactly where you stand.\n\nThis visibility changes how you write. When you can see that your CLAUDE.md is 3,200 tokens, you think twice before adding another section. When you notice a skill file jumped from 800 to 1,400 tokens after an edit, you can decide if the addition was worth it. Context window management becomes a natural part of your writing process, not an afterthought.\n\nCombine this with collapsible XML sections and you get a powerful tool for auditing and trimming your prompt files. Collapse everything, then expand section by section to evaluate what's pulling its weight and what can be cut. Keep your context lean, your prompts effective, and your token budget under control.",
+    "features": ["Live token counting", "Real-time count updates", "Collapsible XML for auditing", "File-level token visibility", "Works with all prompt file types"],
+    "keyword": "context window management"
+  },
+  {
+    "slug": "obsidian-alternative-ai-developers",
+    "title": "Obsidian Alternative for AI Developers — Wrangle",
+    "metaDescription": "Like Obsidian but built for AI development. No graph view, no plugins — just fast markdown editing with token counting, XML support, and embedded terminals.",
+    "h1": "an Obsidian alternative for developers who build with AI",
+    "intro": "Obsidian is a great knowledge base. But if you're editing AI prompt files, skill definitions, and agent configs, you need something purpose-built — not a PKM tool.",
+    "body": "Some developers try to use Obsidian for their AI development files. It makes sense on the surface — Obsidian is a good markdown editor with a plugin ecosystem, and it works with plain files on disk. But Obsidian was designed for personal knowledge management, not AI development workflows.\n\nObsidian's strengths — graph view, backlinks, wiki-style linking — aren't useful when you're editing CLAUDE.md files and system prompts. Its weaknesses in this context are significant: no token counting, no XML block support, no embedded terminals, and Electron-based performance. The plugin ecosystem can partially address some gaps, but you end up duct-taping together an experience that still doesn't feel right.\n\nWrangle takes the opposite approach. Instead of being a general-purpose tool you customize, it's a purpose-built editor for AI development. Token counting is in the status bar, not a plugin. XML blocks are highlighted and collapsible natively. CLAUDE.md, SKILL.md, and AGENTS.md files get distinct treatment without configuration. Embedded terminals run your agent sessions inside the app.\n\nAnd because Wrangle is built with Swift instead of Electron, it launches faster, uses less memory, and integrates with macOS natively — real notifications, real keyboard shortcuts, real file dialogs. If you're spending your days in AI prompt files, Wrangle is what Obsidian can't be.",
+    "features": ["Purpose-built for AI development", "Token counting (no plugins needed)", "XML-in-markdown support", "Embedded terminals", "Native macOS (not Electron)", "AI file awareness out of the box"],
+    "keyword": "Obsidian alternative AI developers"
+  }
+]
