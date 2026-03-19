@@ -21,7 +21,7 @@ Native macOS markdown editor purpose-built for developers working with AI agents
 9. **File-first** — No import/export, no proprietary formats. Just .md files on disk.
 
 ## Pricing
-- **$9.99 one-time purchase** (displayed as "$10" on site)
+- **$24 one-time purchase** (displayed as "$24" on site)
 - No subscription, no trial
 - 30-day money-back guarantee, no questions asked
 - Sold via LemonSqueezy (direct download DMG)

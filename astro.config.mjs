@@ -2,11 +2,13 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
+import vercel from '@astrojs/vercel';
 
 export default defineConfig({
   site: 'https://wrangleapp.dev',
   integrations: [sitemap()],
   vite: { plugins: [tailwindcss()] },
+  adapter: vercel(),
   output: 'static',
   redirects: {
     // Update this URL once your LemonSqueezy store + product is created
