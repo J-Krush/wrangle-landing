@@ -1,6 +1,6 @@
 # Wrangle Ad Copy Plan
 
-> $100/mo total ad spend · $24 one-time purchase · wrangleapp.dev
+> $100/mo total ad spend · $19 one-time purchase · wrangleapp.dev
 
 ---
 
@@ -38,7 +38,7 @@
 3. `Not Electron. Pure Swift.` (25)
 
 **Descriptions (90 chars max):**
-1. `A native macOS markdown editor with embedded terminals and token counting. $24 one-time.` (89)
+1. `A native macOS markdown editor with embedded terminals and token counting. $19 one-time.` (89)
 2. `Built for AI developers. XML highlighting, smart notifications, Apple Silicon native.` (86)
 
 ---
@@ -65,7 +65,7 @@
 3. `Token Counting Built In` (23)
 
 **Descriptions (90 chars max):**
-1. `Purpose-built for CLAUDE.md, SKILL.md, and AGENTS.md files. XML blocks just work. $24.` (87)
+1. `Purpose-built for CLAUDE.md, SKILL.md, and AGENTS.md files. XML blocks just work. $19.` (87)
 2. `Stop editing system prompts in VS Code. Native markdown with token counts and terminals.` (90)
 
 ---
@@ -92,7 +92,7 @@
 3. `Run Agents. Get Notified.` (25)
 
 **Descriptions (90 chars max):**
-1. `Embedded terminals for Claude & Gemini sessions with smart notifications. One app. $24.` (88)
+1. `Embedded terminals for Claude & Gemini sessions with smart notifications. One app. $19.` (88)
 2. `Built by a dev who runs multiple AI agent sessions daily. Native macOS. No subscription.` (90)
 
 ---
@@ -102,7 +102,7 @@
 ### Tweet Variations
 
 **Tweet 1 — Pain point (text only)**
-> i was editing CLAUDE.md files in VS Code like a normal person until i realized: no token counting, XML blocks look like garbage, and i have no idea which terminal my agent is waiting in. so i built wrangle. $24, native macOS.
+> i was editing CLAUDE.md files in VS Code like a normal person until i realized: no token counting, XML blocks look like garbage, and i have no idea which terminal my agent is waiting in. so i built wrangle. $19, native macOS.
 >
 > wrangleapp.dev
 
@@ -133,7 +133,7 @@
 ---
 
 **Tweet 4 — Comparison / opinionated**
-> VS Code is a code editor. Obsidian is a knowledge base. Typora doesn't know what CLAUDE.md is. wrangle is a markdown editor that actually understands AI development. embedded terminals, token counting, agent notifications. $24.
+> VS Code is a code editor. Obsidian is a knowledge base. Typora doesn't know what CLAUDE.md is. wrangle is a markdown editor that actually understands AI development. embedded terminals, token counting, agent notifications. $19.
 >
 > wrangleapp.dev
 
@@ -186,7 +186,7 @@
 | Google Search | $60 | Capture intent — people actively searching for a solution |
 | X Promoted Tweets | $40 | Awareness — reach devs who don't know they need this yet |
 
-**Why 60/40 Google-heavy:** At $24price point, you need high-intent traffic. Google captures people already searching for "markdown editor mac" or "CLAUDE.md editor." X is better for awareness and building the funnel — someone sees the tweet, bookmarks it, buys later.
+**Why 60/40 Google-heavy:** At $19price point, you need high-intent traffic. Google captures people already searching for "markdown editor mac" or "CLAUDE.md editor." X is better for awareness and building the funnel — someone sees the tweet, bookmarks it, buys later.
 
 ---
 
@@ -196,7 +196,7 @@
 - **CTR:** Target >3% (niche keywords should perform well)
 - **CPC:** Track average, aim to stay under $2
 - **Conversions:** Set up conversion tracking on the /buy page (or LemonSqueezy thank-you redirect)
-- **ROAS:** At $24/sale, you need 3 sales/mo to break even on Google's $60. That's a ~0.75% conversion rate on ~400 clicks.
+- **ROAS:** At $19/sale, you need ~4 sales/mo to break even on Google's $60. That's a ~1% conversion rate on ~400 clicks.
 
 **X Ads:**
 - **Engagement rate:** Target >1.5% (likes + replies + link clicks / impressions)
@@ -205,7 +205,7 @@
 - **Profile follows:** Secondary metric — builds long-term audience
 
 **Overall:**
-- **CAC (customer acquisition cost):** Track total spend / total new purchases. Target <$15 (allows profitable acquisition at $24 price point).
+- **CAC (customer acquisition cost):** Track total spend / total new purchases. Target <$12 (allows profitable acquisition at $19 price point).
 - **Attribution:** Use UTM parameters on all ad links (`?utm_source=google&utm_medium=cpc&utm_campaign=markdown-editor` etc.) to separate channels in analytics.
 
 ---
@@ -229,8 +229,8 @@
 
 ### Month 3
 - Evaluate whether $100/mo spend is worth continuing at current conversion rate
-- If CAC >$15, pause paid ads and reallocate to content/SEO or direct outreach
-- If CAC <$8, consider increasing budget to $150-200/mo
+- If CAC >$12, pause paid ads and reallocate to content/SEO or direct outreach
+- If CAC <$6, consider increasing budget to $150-200/mo
 
 ### Ongoing
 - Monthly: review search terms, update negatives, refresh ad copy

@@ -32,7 +32,7 @@ Here's what it does differently:
 
 **File awareness.** The sidebar gives distinct icons and treatment to CLAUDE.md, SKILL.md, AGENTS.md, system-prompt.md — the files that actually matter in this workflow.
 
-It's $24, one-time purchase. No subscription. macOS only (Apple Silicon, Sequoia+). 30-day money-back guarantee.
+It's $19, one-time purchase. No subscription. macOS only (Apple Silicon, Sequoia+). 30-day money-back guarantee.
 
 I'm a solo developer — this is a niche tool for a niche audience. If you're editing CLAUDE.md files daily and running multiple agent sessions, it might save you a lot of friction. If you're happy in VS Code, no hard feelings.
 
@@ -53,7 +53,7 @@ Happy to answer any questions.
 - Reply to every comment within the first 2 hours — Reddit algorithm rewards engagement
 - If someone asks about Windows/Linux: "macOS only for now. It's built with Swift/SwiftUI so a port isn't straightforward, but I'm tracking demand."
 - If someone asks about Cursor/Windsurf: "Those are AI code editors. Wrangle is a markdown editor — it's for the config files and prompts that drive those tools, not for writing code."
-- If someone asks about free/open source: "It's $24 one-time, 30-day money-back. I'm a solo dev and this took months to build. I think that's fair for a tool you'd use daily."
+- If someone asks about free/open source: "It's $19 one-time, 30-day money-back. I'm a solo dev and this took months to build. I think that's fair for a tool you'd use daily."
 - If someone reports a bug: Thank them, ask for details, point to the GitHub feedback repo.
 
 ---
@@ -90,7 +90,7 @@ The whole app is MVVM with @Observable and @MainActor. Modern Swift concurrency 
 - Fuzzy finder (Cmd+P) across all bookmarked projects
 - Distinct file tree icons for AI-specific files (CLAUDE.md, SKILL.md, AGENTS.md)
 
-**Pricing:** $24 one-time purchase. No subscription. Sold direct (DMG download via LemonSqueezy). 30-day money-back guarantee.
+**Pricing:** $19 one-time purchase. No subscription. Sold direct (DMG download via LemonSqueezy). 30-day money-back guarantee.
 
 It's definitely a niche tool — you need to be working with AI coding agents to get value from it. But if that's your workflow, I think you'll appreciate that it's built like a proper Mac app, not another Electron wrapper.
 
@@ -144,7 +144,7 @@ The notification clicks through directly to the correct terminal tab. So you can
 **Limitations I'll be upfront about:**
 - macOS only (Apple Silicon, macOS 15+). No Windows or Linux — it's built with native Apple frameworks.
 - It's a markdown editor + terminal, not an IDE. You still write code in your code editor.
-- $24 one-time purchase. Not free, not open source. Solo dev, sustainable pricing.
+- $19 one-time purchase. Not free, not open source. Solo dev, sustainable pricing.
 
 If you're running 3+ agent sessions daily and losing track of which one needs attention, this might help.
 
@@ -188,7 +188,7 @@ Key decisions:
 - **Token counting** in the status bar for every file.
 - **File-first** -- just .md files on disk. No proprietary format, no import/export.
 
-$24 one-time purchase, 30-day money-back. macOS 15+, Apple Silicon.
+$19 one-time purchase, 30-day money-back. macOS 15+, Apple Silicon.
 
 Solo dev project. This is a niche tool — maybe 10K people in the world need it — but if you're one of them, I think the workflow improvement is significant.
 
@@ -212,7 +212,7 @@ Source for feedback/issues: https://github.com/J-Krush/wrangle-feedback
 |---|---|
 | "Why not just use Obsidian + a terminal?" | Obsidian is a knowledge base. It doesn't have embedded terminals, agent notifications, session context, or XML-in-markdown handling. Different tools for different workflows. |
 | "Why macOS only?" | Built with Swift/SwiftUI and NSTextView. Native frameworks are why the editor feels right on macOS. Cross-platform would mean Electron or a compromise on the editing experience. I chose depth over breadth. |
-| "$24 for a markdown editor?" | It's a markdown editor + terminal multiplexer + notification system purpose-built for a specific workflow. $24 one-time for a daily-use tool felt fair. 30-day money-back if it's not. |
+| "$19 for a markdown editor?" | It's a markdown editor + terminal multiplexer + notification system purpose-built for a specific workflow. $19 one-time for a daily-use tool felt fair. 30-day money-back if it's not. |
 | "Why not open source?" | Solo dev, this is my livelihood. Happy to discuss the architecture and technical decisions openly. Feedback repo is public. |
 | "Just use tmux + vim" | If that works for you, genuinely, keep doing it. Wrangle is for people who want rendered markdown editing (not raw markup) and native macOS notifications without configuring a custom tmux/terminal setup. |
 | "What about Cursor?" | Cursor is a code editor with AI features. Wrangle is a markdown editor with terminal features. They're complementary — you write code in Cursor, you manage your agent configs and sessions in Wrangle. |
@@ -266,7 +266,7 @@ NSTextView editor, SwiftTerm terminals, native macOS notifications, SwiftData pe
 Apple Silicon, macOS 15+. Feels like a Mac app because it is one.
 
 **Tweet 6 (Honest pitch):**
-$24. One-time. No subscription.
+$19. One-time. No subscription.
 
 macOS only. Niche audience. ~10K people probably need this.
 

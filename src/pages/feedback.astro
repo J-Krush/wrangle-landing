@@ -1,0 +1,146 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+
+// ── Configure your features here ──
+const features = [
+  { id: "vim-mode", label: "Vim mode keybindings" },
+  { id: "git-integration", label: "Built-in git status & diff" },
+  { id: "split-panes", label: "Split pane editing" },
+  { id: "ai-autocomplete", label: "AI-powered autocomplete" },
+  { id: "snippets", label: "Custom code snippets / templates" },
+  { id: "remote-ssh", label: "Remote file editing via SSH" },
+  { id: "collaboration", label: "Real-time collaboration" },
+  { id: "plugin-system", label: "Plugin / extension system" },
+];
+---
+
+<Layout title="feature survey — wrangle" description="Help us decide what to build next for Wrangle.">
+  <meta slot="head" name="robots" content="noindex, nofollow" />
+
+  <header class="flex items-center justify-between px-5 lg:px-[200px] py-4">
+    <a href="/" class="flex items-center gap-2.5">
+      <img
+        src="/images/wrangle-logo-13.png"
+        alt="wrangle logo"
+        class="w-8 h-8 rounded"
+      />
+      <span class="text-base font-bold">wrangle</span>
+    </a>
+  </header>
+
+  <main class="px-5 lg:px-[200px] py-16 lg:py-[100px] max-w-[900px] mx-auto">
+    <!-- Survey form -->
+    <div id="survey">
+      <h1 class="text-2xl font-bold mb-3">// what should we build next?</h1>
+      <p class="text-secondary text-sm mb-10 max-w-[600px]">
+        rank these potential features from most wanted (1) to least wanted ({features.length}).
+        your feedback directly shapes what we work on next.
+      </p>
+
+      <form action="/api/feedback" method="POST" id="feedback-form">
+        <div class="flex flex-col gap-3 mb-8">
+          {features.map((feature, i) => (
+            <div class="flex items-center gap-4 bg-card border border-border rounded-lg px-5 py-4">
+              <select
+                name={`rank-${feature.id}`}
+                required
+                class="bg-dark border border-border rounded px-3 py-1.5 text-sm text-primary w-16 text-center appearance-none cursor-pointer focus:outline-none focus:border-teal"
+              >
+                <option value="" disabled selected>—</option>
+                {features.map((_, j) => (
+                  <option value={j + 1}>{j + 1}</option>
+                ))}
+              </select>
+              <span class="text-sm text-secondary">{feature.label}</span>
+            </div>
+          ))}
+        </div>
+
+        <div class="mb-8">
+          <label for="open-ideas" class="text-sm text-primary font-semibold block mb-2">
+            anything else you'd love to see?
+          </label>
+          <textarea
+            id="open-ideas"
+            name="open-ideas"
+            rows="3"
+            placeholder="tell us about features, integrations, or improvements..."
+            class="w-full bg-card border border-border rounded-lg px-5 py-4 text-sm text-secondary placeholder:text-tertiary resize-none focus:outline-none focus:border-teal"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-8 py-3 text-sm font-semibold text-dark hover:brightness-110 transition-all"
+        >
+          submit feedback
+        </button>
+
+        <p id="error-msg" class="text-dot-red text-xs mt-3 hidden"></p>
+      </form>
+    </div>
+
+    <!-- Thank you message (hidden by default) -->
+    <div id="thank-you" class="hidden">
+      <h1 class="text-2xl font-bold mb-3">// thanks!</h1>
+      <p class="text-secondary text-sm mb-8">
+        your feedback has been recorded. we appreciate you taking the time to help shape wrangle's future.
+      </p>
+      <a
+        href="/"
+        class="inline-flex items-center justify-center rounded-lg border border-border px-6 py-2.5 text-sm font-medium text-secondary hover:text-primary hover:border-teal transition-all"
+      >
+        back to home
+      </a>
+    </div>
+  </main>
+
+  <footer class="flex items-center justify-between px-5 lg:px-[200px] py-5 border-t border-border-subtle">
+    <div class="flex gap-3 text-tertiary text-xs">
+      <span>© 2026 wrangle</span>
+      <span>·</span>
+      <a href="https://jkrush.dev" target="_blank" class="hover:text-secondary transition-colors">built by J-Krush</a>
+    </div>
+    <div class="flex gap-3 text-tertiary text-xs">
+      <a href="mailto:support@wrangleapp.dev" class="hover:text-secondary transition-colors">support</a>
+      <span>·</span>
+      <a href="https://github.com/J-Krush/wrangle-feedback" class="hover:text-secondary transition-colors">github</a>
+    </div>
+  </footer>
+</Layout>
+
+<script>
+  // Show thank-you if submitted
+  if (new URLSearchParams(window.location.search).has('submitted')) {
+    document.getElementById('survey')?.classList.add('hidden');
+    document.getElementById('thank-you')?.classList.remove('hidden');
+  }
+
+  // Validate no duplicate ranks before submission
+  document.getElementById('feedback-form')?.addEventListener('submit', (e) => {
+    const selects = document.querySelectorAll<HTMLSelectElement>('select[name^="rank-"]');
+    const values = Array.from(selects).map(s => s.value).filter(v => v !== '');
+    const unique = new Set(values);
+
+    if (values.length !== selects.length) {
+      e.preventDefault();
+      showError('please rank all features before submitting.');
+      return;
+    }
+
+    if (unique.size !== values.length) {
+      e.preventDefault();
+      showError('each feature needs a unique rank — no duplicates.');
+      return;
+    }
+  });
+
+  function showError(msg: string) {
+    const el = document.getElementById('error-msg');
+    if (el) {
+      el.textContent = msg;
+      el.classList.remove('hidden');
+    }
+  }
+</script>

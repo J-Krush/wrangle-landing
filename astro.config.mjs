@@ -6,7 +6,9 @@ import vercel from '@astrojs/vercel';
 
 export default defineConfig({
   site: 'https://wrangleapp.dev',
-  integrations: [sitemap()],
+  integrations: [sitemap({
+    filter: (page) => !page.includes('/feedback'),
+  })],
   vite: { plugins: [tailwindcss()] },
   adapter: vercel(),
   output: 'static',

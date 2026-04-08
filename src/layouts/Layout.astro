@@ -8,7 +8,7 @@ interface Props {
 
 const {
   title,
-  description = "A native macOS markdown editor for developers working with Claude Code, Gemini, and AI agents. Embedded terminals, smart notifications, token counting. $24 one-time.",
+  description = "A native macOS markdown editor for developers working with Claude Code, Gemini, and AI agents. Embedded terminals, smart notifications, token counting. $19 one-time.",
   canonical,
   ogImage = "/images/og-image.png",
 } = Astro.props;
@@ -51,6 +51,7 @@ const ogImageUrl = `${siteUrl}${ogImage}`;
       rel="stylesheet"
     />
     <title>{title}</title>
+    <slot name="head" />
   </head>
   <body class="bg-page text-primary font-mono antialiased">
     <slot />
