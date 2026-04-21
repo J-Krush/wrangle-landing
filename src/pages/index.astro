@@ -12,7 +12,7 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Wrangle",
-    "description": "A native macOS markdown editor and terminal workspace for developers working with AI agents like Claude Code and Gemini.",
+    "description": "A native macOS markdown editor, terminal, and browser workspace for developers working with AI agents like Claude Code and Gemini.",
     "url": "https://wrangleapp.dev",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "macOS 15+",
@@ -28,7 +28,7 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
       "name": "J-Krush",
       "url": "https://jkrush.dev"
     },
-    "screenshot": "https://wrangleapp.dev/images/product-images/shot-1.png"
+    "screenshot": "https://wrangleapp.dev/images/product-images/editor-simple.png"
   })} />
   <!-- Header -->
   <header class="flex items-center justify-between px-5 lg:px-[200px] py-4">
@@ -54,7 +54,7 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
       the markdown editor built for AI-native development.
     </h1>
     <p class="text-secondary text-base lg:text-lg text-center leading-relaxed max-w-[800px]">
-      a native macOS workspace for developers who live in Claude Code, Gemini, and multi-agent workflows. edit your CLAUDE.md files, run agent sessions with embedded terminals, and get notified the moment an agent needs input or finishes — so you're never guessing which tab to check.
+      a native macOS workspace for developers who live in Claude Code, Gemini, and multi-agent workflows. edit your CLAUDE.md files, run agent sessions in embedded terminals, inspect your work in an embedded browser, and get notified the moment an agent needs input or finishes — so you're never guessing which tab to check.
     </p>
     <div class="flex flex-col items-center gap-3">
       <a
@@ -73,7 +73,7 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
     <div class="w-full max-w-[1040px] p-4 rounded-xl bg-black shadow-2xl shadow-black/50">
       <video
         id="sizzle-video"
-        src="/videos/Wrangle-sizzle-v1.mov"
+        src="/videos/wrangle-1.2-sizzle.mp4"
         class="w-full h-auto rounded-lg cursor-pointer"
         loop
         muted
@@ -99,6 +99,18 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
         <span class="text-base font-semibold">embedded terminals</span>
         <span class="text-tertiary text-base hidden sm:inline">—</span>
         <span class="text-secondary text-base">run claude, gemini, and other agents in tabbed terminals. notifications pull you back when they need input or finish.</span>
+      </div>
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+        <span class="text-teal-dark text-base">→</span>
+        <span class="text-base font-semibold">embedded browser</span>
+        <span class="text-tertiary text-base hidden sm:inline">—</span>
+        <span class="text-secondary text-base">webkit tabs next to your editor, with console, network, elements, and cookies panels built in. inspect the thing your agent just built without leaving the window.</span>
+      </div>
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+        <span class="text-teal-dark text-base">→</span>
+        <span class="text-base font-semibold">projects</span>
+        <span class="text-tertiary text-base hidden sm:inline">—</span>
+        <span class="text-secondary text-base">group locations, terminals, and browsers under named projects. dashboard, todos, and a canvas view per project.</span>
       </div>
       <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
         <span class="text-teal-dark text-base">→</span>
@@ -157,48 +169,65 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
       </p>
     </div>
     <img
-      src="/images/product-images/shot-1.png"
-      alt="Wrangle markdown editor showing a rendered CLAUDE.md file with inline formatting and XML syntax highlighting"
+      src="/images/product-images/editor-simple.png"
+      alt="Wrangle markdown editor showing a CLAUDE.md file with inline formatting and XML syntax highlighting"
       class="w-full max-w-[1040px] h-auto rounded shadow-2xl shadow-black/50"
       loading="lazy"
     />
   </section>
 
-  <!-- Terminals & Sessions -->
-  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px]">
-    <div class="w-full max-w-[1040px] flex flex-col lg:flex-row gap-8 lg:gap-12">
-      <!-- Left column: Terminal screenshot -->
-      
-      <img
-        src="/images/product-images/shot-4.png"
-        alt="Wrangle terminal with notification toast showing agent ready for input"
-        class="w-full lg:w-[55%] h-auto object-contain rounded shadow-2xl shadow-black/50"
-        loading="lazy"
-      />
-
-      <!-- Right column: Feature descriptions -->
-      <div class="w-full lg:w-[45%] flex flex-col gap-6 justify-center">
-        <h2 class="text-2xl font-bold">// terminals & sessions</h2>
-        <div class="flex flex-col gap-5">
-          <div class="flex flex-col gap-1">
-            <span class="text-base"><span class="text-teal-dark">→</span> <span class="font-semibold">tabbed terminals</span></span>
-            <span class="text-secondary text-sm">multiple agent sessions running side by side. no more hunting for the right terminal window.</span>
-          </div>
-          <div class="flex flex-col gap-1">
-            <span class="text-base"><span class="text-teal-dark">→</span> <span class="font-semibold">smart notifications</span></span>
-            <span class="text-secondary text-sm">get pulled back to the right tab when an agent needs a response or finishes its task.</span>
-          </div>
-          <div class="flex flex-col gap-1">
-            <span class="text-base"><span class="text-teal-dark">→</span> <span class="font-semibold">session context</span></span>
-            <span class="text-secondary text-sm">every terminal shows its linked claude file, active skills, and connected MCP servers.</span>
-          </div>
-          <div class="flex flex-col gap-1">
-            <span class="text-base"><span class="text-teal-dark">→</span> <span class="font-semibold">multi-project</span></span>
-            <span class="text-secondary text-sm">switch between projects without losing running sessions or terminal state.</span>
-          </div>
-        </div>
-      </div>
+  <!-- Browser Preview -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// the browser</h2>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        an embedded webkit browser sits right next to your editor and terminals. tabs, back/forward, url bar, and full devtools — console, network, elements, cookies. your agent just shipped a change? inspect it without leaving wrangle.
+      </p>
     </div>
+    <div class="w-full max-w-[1040px] p-4 rounded-xl bg-black shadow-2xl shadow-black/50">
+      <video
+        id="browser-video"
+        src="/videos/browser-feature.mp4"
+        class="w-full h-auto rounded-lg cursor-pointer"
+        loop
+        muted
+        autoplay
+        playsinline
+        preload="metadata"
+      ></video>
+    </div>
+  </section>
+
+  <!-- Terminals & Sessions -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// terminals & sessions</h2>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        run multiple agent sessions in tabbed terminals — claude, gemini, codex, whatever. each terminal shows its linked claude file, active skills, and connected MCP servers, with notifications that pull you back the moment an agent needs input or finishes a task.
+      </p>
+    </div>
+    <img
+      src="/images/product-images/terminal.png"
+      alt="Wrangle terminal with notification toast showing agent ready for input"
+      class="w-full max-w-[1040px] h-auto rounded shadow-2xl shadow-black/50"
+      loading="lazy"
+    />
+  </section>
+
+  <!-- Full Workspace Overview -->
+  <section class="flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px] gap-8">
+    <div class="w-full max-w-[1040px] flex flex-col gap-6">
+      <h2 class="text-2xl font-bold">// everything in one view</h2>
+      <p class="text-secondary text-base leading-relaxed max-w-[700px]">
+        editor, terminal, browser, project dashboard, todos, and agent sessions — all in a single window, organized by project. context-switching happens inside the app, not between apps.
+      </p>
+    </div>
+    <img
+      src="/images/product-images/project-overview.png"
+      alt="Wrangle full workspace view showing the editor, terminal, embedded browser, project dashboard, and sidebar project rail all visible at once"
+      class="w-full max-w-[1040px] h-auto rounded shadow-2xl shadow-black/50"
+      loading="lazy"
+    />
   </section>
 
   <!-- Anti-Pitch -->
@@ -220,6 +249,13 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
     <a href="/refund" class="text-teal-dark text-sm hover:underline transition-colors">
       read the refund policy →
     </a>
+  </section>
+
+  <!-- AI Disclosure -->
+  <section class="flex items-center justify-center px-5 lg:px-[200px] py-16 lg:py-[100px]">
+    <p class="text-tertiary text-sm text-center leading-relaxed max-w-[600px]">
+      built with heavy AI assistance and reviewed by a professional Swift developer before shipping. a tool for AI-native dev, built the same way.
+    </p>
   </section>
 
   <!-- Final CTA -->
@@ -261,13 +297,18 @@ const downloadUrl = `https://dl.wrangleapp.dev/Wrangle-${version}.dmg`;
   </footer>
 
   <script>
-    const video = document.getElementById('sizzle-video') as HTMLVideoElement;
-    video.addEventListener('click', () => {
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
-      }
+    const videos = ['sizzle-video', 'browser-video']
+      .map((id) => document.getElementById(id) as HTMLVideoElement | null)
+      .filter((v): v is HTMLVideoElement => v !== null);
+
+    videos.forEach((video) => {
+      video.addEventListener('click', () => {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
     });
   </script>
 </Layout>
