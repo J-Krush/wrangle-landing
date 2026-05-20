@@ -1,36 +1,31 @@
 # Wrangle Landing Page
 
-Landing page for Wrangle, built with [Astro](https://astro.build/) and [Tailwind CSS v4](https://tailwindcss.com/).
+## What this is
 
-## Prerequisites
+Astro source for [wrangleapp.dev](https://wrangleapp.dev), the marketing site for Wrangle. The Wrangle macOS app itself lives at [github.com/J-Krush/wrangle](https://github.com/J-Krush/wrangle).
 
-- [Node.js](https://nodejs.org/) (v18+)
-- [pnpm](https://pnpm.io/)
+## Develop
 
-## Getting Started
+Local development uses [pnpm](https://pnpm.io/) against [Astro](https://astro.build/) with [Tailwind CSS v4](https://tailwindcss.com/).
 
-```bash
-git clone <repo-url>
-cd "Landing Page"
-pnpm install
-pnpm dev
-```
+| Command         | Description                          |
+| --------------- | ------------------------------------ |
+| `pnpm dev`      | Start local dev server               |
+| `pnpm build`    | Build production site to `./dist/`   |
+| `pnpm preview`  | Preview the production build locally |
 
-The dev server starts at `http://localhost:4321`.
+Requires Node.js 18+ and pnpm.
 
-## Scripts
+The dev server runs without a `.env` file. The `/feedback` form POST route will warn about a missing `RESEND_API_KEY` — this is expected for local development.
 
-| Command             | Description                          |
-| ------------------- | ------------------------------------ |
-| `pnpm dev`       | Start local dev server               |
-| `pnpm build`     | Build production site to `./dist/`   |
-| `pnpm preview`   | Preview the production build locally |
+## Deploy
 
-## Project Structure
+Deploys to [Vercel](https://vercel.com); configured via `@astrojs/vercel`.
 
-```
-src/
-├── layouts/       # Page layouts
-├── pages/         # Route pages
-└── styles/        # Global styles (Tailwind)
-```
+## See also
+
+- [J-Krush/wrangle](https://github.com/J-Krush/wrangle) — the Wrangle macOS app source.
+
+## License
+
+MIT — see [LICENSE](./LICENSE).
