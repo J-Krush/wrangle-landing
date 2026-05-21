@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+---
+
+<Layout title="404 — wrangle" description="Page not found.">
+  <meta slot="head" name="robots" content="noindex, nofollow" />
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-5 lg:px-[200px] py-4">
+    <a href="/" class="flex items-center gap-2.5">
+      <img
+        src="/images/wrangle-logo-13.png"
+        alt="wrangle logo"
+        class="w-8 h-8 rounded"
+      />
+      <span class="text-base font-bold">wrangle</span>
+    </a>
+    <div class="flex flex-row items-center gap-2">
+      <a
+        href="https://github.com/J-Krush/wrangle/releases/latest"
+        class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-4 py-2 text-sm font-bold text-dark hover:brightness-110 transition-all"
+      >
+        Download for macOS
+      </a>
+      <a
+        href="https://github.com/J-Krush/wrangle"
+        class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-border px-4 py-2 text-sm font-bold text-primary hover:border-teal-dark hover:text-teal transition-all"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        Star on GitHub
+      </a>
+    </div>
+  </header>
+
+  <!-- Centered 404 content -->
+  <div class="min-h-screen flex flex-col items-center justify-center px-5 lg:px-[200px] py-16 gap-8">
+    <div class="w-full max-w-[700px] flex flex-col items-center gap-6 text-center">
+      <h1 class="text-[28px] sm:text-[36px] lg:text-[48px] font-bold text-center leading-[1.15]">404 — page not found</h1>
+      <p class="text-secondary text-base leading-relaxed max-w-[600px] text-center">
+        Wrangle is now free and open source. The old paid surface (<code>/buy</code>, <code>/pricing</code>, <code>/refund</code>, <code>/terms</code>) was retired in the OSS flip.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center gap-3">
+        <a
+          href="https://github.com/J-Krush/wrangle/releases/latest"
+          class="inline-flex items-center justify-center rounded-lg bg-linear-to-b from-teal to-teal-dark px-8 py-4 text-base font-bold text-dark hover:brightness-110 transition-all"
+        >
+          Download for macOS
+        </a>
+        <a
+          href="https://github.com/J-Krush/wrangle"
+          class="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-8 py-4 text-base font-bold text-primary hover:border-teal-dark hover:text-teal transition-all"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          Star on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="flex items-center justify-between px-5 lg:px-[200px] py-5 border-t border-border-subtle">
+    <div class="flex gap-3 text-tertiary text-sm">
+      <span>© 2026 wrangle</span>
+      <span>·</span>
+      <a href="https://jkrush.dev" target="_blank" class="hover:text-secondary transition-colors">Built by J Krush</a>
+      <span>·</span>
+      <a href="./LICENSE" class="hover:text-secondary transition-colors">MIT</a>
+    </div>
+    <div class="flex gap-3 text-tertiary text-sm">
+      <a href="mailto:support@wrangleapp.dev" class="hover:text-secondary transition-colors">support</a>
+      <span>·</span>
+      <a href="https://github.com/J-Krush/wrangle" class="hover:text-secondary transition-colors">github</a>
+    </div>
+  </footer>
+</Layout>
