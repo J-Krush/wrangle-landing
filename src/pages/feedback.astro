@@ -15,7 +15,7 @@ const features = [
 ];
 ---
 
-<Layout title="feature survey — wrangle" description="Help us decide what to build next for Wrangle.">
+<Layout title="feature survey: wrangle" description="Help us decide what to build next for Wrangle.">
   <meta slot="head" name="robots" content="noindex, nofollow" />
 
   <header class="flex items-center justify-between px-5 lg:px-[200px] py-4">
@@ -133,7 +133,7 @@ const features = [
 
     if (unique.size !== values.length) {
       e.preventDefault();
-      showError('each feature needs a unique rank — no duplicates.');
+      showError('each feature needs a unique rank, no duplicates.');
       return;
     }
   });

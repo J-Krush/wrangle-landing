@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 ---
 
-<Layout title="wrangle — free macOS markdown editor for AI developers" canonical="https://wrangleapp.dev/">
+<Layout title="wrangle: free macOS markdown editor for AI developers" canonical="https://wrangleapp.dev/">
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -56,7 +56,7 @@ import "../styles/global.css";
   <!-- Hero -->
   <section class="flex flex-col items-center px-5 lg:px-[200px] pt-16 lg:pt-[100px] pb-12 lg:pb-[80px] gap-8">
     <h1 class="text-[28px] sm:text-[36px] lg:text-[52px] font-bold text-center leading-[1.15] max-w-[1040px]">
-      native macOS markdown editor for AI agents — free and open source.
+      native macOS markdown editor for AI agents. free and open source.
     </h1>
     <p class="text-secondary text-base lg:text-lg text-center leading-relaxed max-w-[800px]">
       built for developers driving Claude Code, Gemini, and multi-agent workflows. edit CLAUDE.md files, run agent sessions in embedded terminals, and stay in flow without context-switching across windows.
@@ -94,24 +94,6 @@ import "../styles/global.css";
   <section class="flex flex-col items-center px-5 lg:px-[200px] pt-16 lg:pt-[100px] pb-28 lg:pb-[148px]">
     <img src="/images/wrangle-logo-transparent.png" alt="Wrangle logo" class="w-112 max-w-full h-auto" />
     <h2 class="text-[32px] lg:text-[40px] font-bold text-center -mt-12">wrangle your agents.</h2>
-  </section>
-
-  <!-- Story -->
-  <section class="bg-card border-y border-border-subtle flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px]">
-    <div class="w-full max-w-[700px] flex flex-col gap-6">
-      <p class="text-secondary text-base leading-relaxed">
-        i built wrangle because my own workflow blew up when i started using claude every day. terminals everywhere, CLAUDE.md drifting open, agents finishing things i wasn't watching. so i built what i wanted — one window for all of it.
-      </p>
-      <p class="text-secondary text-base leading-relaxed">
-        native macOS for developers driving AI agents is its own category. typora, obsidian, and vs-code weren't built for the shape of work that started showing up around claude code, gemini, and multi-agent workflows. wrangle is.
-      </p>
-      <p class="text-secondary text-base leading-relaxed">
-        i launched it as a paid product first. product hunt, reddit ads, the whole motion. the math never quite worked on a small one-time price, and marketing isn't work i want to own. better to put the tool in the open.
-      </p>
-      <p class="text-secondary text-base leading-relaxed">
-        so it's free and open source now. the codebase, planning history, and release process are all on display. use it if it helps; read the repo if you're curious how it was built.
-      </p>
-    </div>
   </section>
 
   <!-- Features -->
@@ -175,7 +157,7 @@ import "../styles/global.css";
     <div class="w-full max-w-[1040px] flex flex-col gap-6">
       <h2 class="text-2xl font-bold">// never miss an agent</h2>
       <p class="text-secondary text-base leading-relaxed max-w-[700px]">
-        native macOS notifications tell you exactly when an agent needs input, finishes a task, or requires permission — so you can context-switch away without worry.
+        native macOS notifications tell you exactly when an agent needs input, finishes a task, or requires permission, so you can context-switch away without worry.
       </p>
     </div>
     <div class="w-full max-w-[1040px] flex flex-col gap-4">
@@ -206,7 +188,7 @@ import "../styles/global.css";
     <div class="w-full max-w-[1040px] flex flex-col gap-6">
       <h2 class="text-2xl font-bold">// the browser</h2>
       <p class="text-secondary text-base leading-relaxed max-w-[700px]">
-        an embedded webkit browser sits right next to your editor and terminals. tabs, back/forward, url bar, and full devtools — console, network, elements, cookies. your agent just shipped a change? inspect it without leaving wrangle.
+        an embedded webkit browser sits right next to your editor and terminals. tabs, back/forward, url bar, and full devtools (console, network, elements, cookies). your agent just shipped a change? inspect it without leaving wrangle.
       </p>
     </div>
     <div class="w-full max-w-[1040px] p-4 rounded-xl bg-black shadow-2xl shadow-black/50">
@@ -228,7 +210,7 @@ import "../styles/global.css";
     <div class="w-full max-w-[1040px] flex flex-col gap-6">
       <h2 class="text-2xl font-bold">// terminals & sessions</h2>
       <p class="text-secondary text-base leading-relaxed max-w-[700px]">
-        run multiple agent sessions in tabbed terminals — claude, gemini, codex, whatever. each terminal shows its linked claude file, active skills, and connected MCP servers, with notifications that pull you back the moment an agent needs input or finishes a task.
+        run multiple agent sessions in tabbed terminals (claude, gemini, codex, whatever). each terminal shows its linked claude file, active skills, and connected MCP servers, with notifications that pull you back the moment an agent needs input or finishes a task.
       </p>
     </div>
     <img
@@ -244,7 +226,7 @@ import "../styles/global.css";
     <div class="w-full max-w-[1040px] flex flex-col gap-6">
       <h2 class="text-2xl font-bold">// everything in one view</h2>
       <p class="text-secondary text-base leading-relaxed max-w-[700px]">
-        editor, terminal, browser, project dashboard, todos, and agent sessions — all in a single window, organized by project. context-switching happens inside the app, not between apps.
+        editor, terminal, browser, project dashboard, todos, and agent sessions, all in a single window, organized by project. context-switching happens inside the app, not between apps.
       </p>
     </div>
     <img
@@ -255,14 +237,22 @@ import "../styles/global.css";
     />
   </section>
 
-  <!-- Anti-Pitch -->
-  <section class="flex items-center justify-center px-5 lg:px-[200px] py-16 lg:py-[100px]">
-    <p class="text-secondary text-base lg:text-lg text-center leading-[1.7] max-w-[700px]">
-      if you're not running AI agents from your editor yet, you will be soon.
-      wrangle was built by a developer who manages multiple claude and gemini
-      sessions every day — a native macOS workspace for that work, shaped
-      around it instead of bolted onto a text editor. one app. everything in view.
-    </p>
+  <!-- Story -->
+  <section class="bg-card border-y border-border-subtle flex flex-col items-center px-5 lg:px-[200px] py-16 lg:py-[100px]">
+    <div class="w-full max-w-[700px] flex flex-col gap-6">
+      <p class="text-secondary text-base leading-relaxed">
+        i built wrangle because my own workflow blew up when i started using claude every day. terminals everywhere, CLAUDE.md drifting open, agents finishing things i wasn't watching. so i built what i wanted: one window for all of it.
+      </p>
+      <p class="text-secondary text-base leading-relaxed">
+        native macOS for developers driving AI agents is its own category. typora, obsidian, and vs-code weren't built for the shape of work that started showing up around claude code, gemini, and multi-agent workflows. wrangle is.
+      </p>
+      <p class="text-secondary text-base leading-relaxed">
+        i launched it as a paid product first. product hunt, reddit ads, the whole motion. the math never quite worked on a small one-time price, and marketing isn't work i want to own. better to put the tool in the open.
+      </p>
+      <p class="text-secondary text-base leading-relaxed">
+        so it's free and open source now. the codebase, planning history, and release process are all on display. use it if it helps; read the repo if you're curious how it was built.
+      </p>
+    </div>
   </section>
 
   <!-- AI Disclosure -->
