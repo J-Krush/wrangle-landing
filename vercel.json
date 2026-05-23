@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/download",
+      "destination": "https://github.com/J-Krush/wrangle/releases/latest",
+      "permanent": false
+    }
+  ]
+}
